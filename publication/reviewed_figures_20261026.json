@@ -1,0 +1,53 @@
+[
+  {
+    "number": 1,
+    "file": "figure_01_topological_phases.pdf",
+    "sha256": "ecc9e60088cde774ee1cb0d931deea8a1ab8c651223dcde69a72d59670a880b9"
+  },
+  {
+    "number": 2,
+    "file": "figure_02_wasserstein_decomposition.pdf",
+    "sha256": "4958dc46147af9d15b9161625f474f0d6ab60590477ced9e430dcda9c9dae40f"
+  },
+  {
+    "number": 3,
+    "file": "figure_03_early_stopping_denoising.pdf",
+    "sha256": "cf57d7f03c7836dc0e51f63e712f6def308eba9e478deda6ca829bfd8d24e606"
+  },
+  {
+    "number": 4,
+    "file": "figure_04_celeba_empirical_averaging.pdf",
+    "sha256": "7017487e324f0551c43fbbb455173520e26095eb09ce3d24cd036bee7cf2cdf7"
+  },
+  {
+    "number": 5,
+    "file": "figure_05_celeba_empirical_unet.pdf",
+    "sha256": "e657127eeb02416d4ec6b6bd05e5b4be45211cac0bcdf478aee15315a00e4db6"
+  },
+  {
+    "number": 6,
+    "file": "figure_06_celeba_cross_architecture.pdf",
+    "sha256": "09ebf98a0d82c9a703f902059ff0f7db5ed6d99215b08f3cf7c3a3075cfc1084"
+  },
+  {
+    "number": 7,
+    "file": "figure_07_celeba_field_replacement.pdf",
+    "sha256": "c3604a6431769f3757e1618f07871f391dc3e45af5b8048d1563a41f3fa55491"
+  },
+  {
+    "number": 8,
+    "file": "figure_08_synthetic_geometries.pdf",
+    "sha256": "73490eeeb23b0ac107f372971ebf266cb68794bca37cc6526b922fcc7f7a9a48"
+  },
+  {
+    "number": 9,
+    "file": "figure_09_mnist_comparison.pdf",
+    "sha256": "47b90913990b50606283455a8a54051bd8a14b94a403493590c2c82a7785f916",
+    "status": "original retained by user"
+  },
+  {
+    "number": 10,
+    "file": "figure_10_celeba_mlp_extended_training.pdf",
+    "sha256": "43e2e087e2462032a127e45c50caea8d40c0858b00ad40b0ecca3aa6b7b52efc"
+  }
+]
