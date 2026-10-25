@@ -1,7 +1,7 @@
 # Topology and Distributional Generalization in Empirical Diffusion Models
 
 Research code accompanying the manuscript by **Jinghuan Sun, Jianxing Wang,
-and Yaoyu Zhang**. The repository contains empirical diffusion / flow-matching
+and Yaoyu Zhang** (equal contribution; joint first authors). The repository contains empirical diffusion / flow-matching
 experiments, geometric diagnostics, neural-field comparisons, and figure scripts.
 
 **Code:** [https://github.com/herald1921/empirical-diffusion-generalization](https://github.com/herald1921/empirical-diffusion-generalization)  
@@ -54,6 +54,10 @@ independently integrates the saved trajectories in linear flow-matching time.
 These commands do not train a network.
 
 ## Figures and reproduction
+
+For the current JMLR typography exports, see
+[`publication/README.md`](publication/README.md). The original experiment
+renderers below remain available for the historical layouts.
 
 ```bash
 python run.py figure2

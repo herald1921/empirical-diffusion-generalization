@@ -1,0 +1,2 @@
+PyMuPDF==1.26.7
+# NumPy, Matplotlib and SciPy are pinned in ../requirements-numerics.txt.
