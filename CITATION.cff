@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using these experiments."
+type: software
+license: MIT
+title: "Topology and Distributional Generalization in Empirical Diffusion Models: experiment code"
+authors:
+  - family-names: Sun
+    given-names: Jinghuan
+  - family-names: Wang
+    given-names: Jianxing
+  - family-names: Zhang
+    given-names: Yaoyu
+repository-code: "https://github.com/herald1921/empirical-diffusion-generalization"
+preferred-citation:
+  type: unpublished
+  title: "Topology and Distributional Generalization in Empirical Diffusion Models"
+  authors:
+    - family-names: Sun
+      given-names: Jinghuan
+    - family-names: Wang
+      given-names: Jianxing
+    - family-names: Zhang
+      given-names: Yaoyu
+  year: 2026
+  notes: "Manuscript."

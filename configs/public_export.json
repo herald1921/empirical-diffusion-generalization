@@ -1,0 +1,506 @@
+{
+  "status": "MIT code release; image datasets and checkpoints excluded",
+  "policy": "No Git history; no image-experiment NPY/NPZ; internal records excluded; location strings generalized.",
+  "retained_files": 277,
+  "omitted_files": 77,
+  "omitted": [
+    {
+      "path": "appendix_d_images/figure09/field_inputs_predictions.npz",
+      "sha256": "4c02018a734a1f158705c62775c1ccf924ee42b9780c66b4015f07a014889bc9",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "appendix_d_images/figure09/frozen_data/plot_data.npz",
+      "sha256": "0a22734ea325d711464db0140f92e451a092207dcc397672eef97d11019a934c",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "appendix_d_images/figure10/source/final_samples.npz",
+      "sha256": "1ea94f05e620a42de8f601ce8fcb825d25a50092c4da77b6d4c4243817d5d447",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "appendix_d_images/figure10/source/intermediate/intermediate_stages_20261018/baseline_200k/samples.npz",
+      "sha256": "4f77c16d55e1174f7157cc9a0fee30403bb0978fd9e47713814876e70f16e2f9",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "appendix_d_images/figure10/source/intermediate/intermediate_stages_20261018/step_500k/samples.npz",
+      "sha256": "3fd7ddbcb4b4f2fc28c651ea6569b22a9abbdb4c74eee5be35edb49ad26ccc1b",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "configs/corrections_20261023/data_contract_verification.json",
+      "sha256": "9945819ebd6dac1723aaa0e7d42d2c507c090ca02e0a24080ee605946f18bff6",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/figure_validation.json",
+      "sha256": "90ca9a1b8d0875390ad99fe62f53b1eb5af904f1edadc2e7139ab3fde7250749",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/manuscript_changes.json",
+      "sha256": "c9284e93adf96a1fef6768ff60caa39bc4b195556610464b1413d4ff1a0f0d4a",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/overleaf_verification.json",
+      "sha256": "deb3850ea70179a16bc68aad37a6ab9fcaaaa4a6a49aa9e885dbf1808cdb510e",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/pipeline_checks.json",
+      "sha256": "25c3fe2cc0cc545ccc85a458142a81644b0e37dd943594d82b4e3f0fd80f9743",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/revalidation_report.json",
+      "sha256": "c7823722db815ad4d917d9bde057260441cbd285599763bac5193879754bfd44",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/source_manifest_before.json",
+      "sha256": "cf4e72b14916dffa5c94b79eab2da402b56d63f047423cfdbd80954841a34a5f",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/corrections_20261023/test_results.json",
+      "sha256": "6e2d70592108f03e6906dadfc1da737b94e28392be1ddc71f618259a9a2a01ac",
+      "reason": "internal correction and manuscript audit record"
+    },
+    {
+      "path": "configs/server_records/celeba_preprocessing_audit.json",
+      "sha256": "779c10fcc7207a983fc08864a2fe6075d6723610b97401b844fc7f80c052f9c8",
+      "reason": "internal server inventory"
+    },
+    {
+      "path": "configs/server_records/model_locations_server.json",
+      "sha256": "1e1879788fca5ce2c79b5dfda292c0eae1b81c312f4b022c4b636793785b5b84",
+      "reason": "internal server inventory"
+    },
+    {
+      "path": "configs/server_records/runtime_versions.json",
+      "sha256": "36e9b29d5b6f466679c9be6161071470e46bc59fcb1e452790fa7f875d6bb038",
+      "reason": "internal server inventory"
+    },
+    {
+      "path": "docs/MIT-LICENSE-PROPOSAL.txt",
+      "sha256": "c41aa9166d461c0cdf810f35bfa601ae94ba9fe763aa4a7997f14686987a88a0",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/REVIEW.zh-CN.md",
+      "sha256": "8417915b75165a8f3cdc4693f462013ebf3adbb3b3ffbe0be0ede93cc73bbef9",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/audit_repository.py",
+      "sha256": "3b9931a6753b2bf7c20c12acca198030a6d206a1d6164483c43c7d1edc8e2974",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/history_audit.json",
+      "sha256": "02ce5ccee4d1471af21398181314fc08301e2959ef81b96b806d4bd5cf5dda61",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/original_documents/README.md",
+      "sha256": "63da88b6c75a9fbe2336cb9c28a6e21fb1351273cc9fb324ac13789c9766ad88",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/original_documents/configs/source_manifest.json",
+      "sha256": "014b57d805b33434e10c356b2de07c331f92ac15a76bf9a7788ebd58818f29ea",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/release_validation.json",
+      "sha256": "348b5e9f9c263d95096148e874266473de2569ef3b747d1d841700e30a9c320f",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/remote_audit.json",
+      "sha256": "a337520e0553ec3f128b79298e1839f03f859540bec4252b2e5437435489e068",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/source_review_20261025/REVIEW.zh-CN.md",
+      "sha256": "9a347c37ac31d7374bf6bb281aff73d84fd7f8ca0b630c6f71c55438ea4f7fa0",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/source_review_20261025/check_source_provenance.py",
+      "sha256": "5487fa853b13ce28fd60d619893623ea7ed5a0e5451b7099fa45a5d7eefe6f53",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/source_review_20261025/source_comparison.json",
+      "sha256": "2a6730c6b5c7da9577cfc1f3d15bc9fba8a7b14dad25f05eb39a57d2a2768f25",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "docs/private_release/verify_release.py",
+      "sha256": "bbab8e93d96ed55597410c08152f19fa5e366a2bcf0960538e6e9406849bba9f",
+      "reason": "private release preparation material"
+    },
+    {
+      "path": "section_04_distribution/figure02/data/file_cleanup_manifest.json",
+      "sha256": "1e6e6005c723186051513bffba308fa2f0d572f4f317bb93301d1b8fb272d830",
+      "reason": "internal file-management record"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N10000_s1_baseline200k.npz",
+      "sha256": "77a8c968700919164816504fe8c55f5320e15eecc35ab2068b8f3cede50ce8ae",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N10000_s2_baseline200k.npz",
+      "sha256": "7c1721a28cacf39e28d095abf2ba15b551bfbf077518cf5f8af340dcbe6a1e54",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N1000_s1_baseline200k.npz",
+      "sha256": "ec61f7c2df8e58654f57fcdcafe2ddd57ec569ddb2df905c4e59911c34c9faa7",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N1000_s2_baseline200k.npz",
+      "sha256": "45afbf0f5b806d99366646eb56192bf4d47f41c70a52a2758d3e04a0b90becb4",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N100_s1_baseline200k.npz",
+      "sha256": "2607c52139bef810875b7191c5d558b950e1649a75d1cb09fd5db00819888e11",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N100_s2_baseline200k.npz",
+      "sha256": "b3506af63f4bb522071da1097ae45723d66487e9140f602f4704d2ff905316fd",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N10_s1_baseline200k.npz",
+      "sha256": "d8c51b0286ec4c41b74ca1e51d0ab9d8dd304c412a9264c87bc9f8ba12b4a600",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N10_s2_baseline200k.npz",
+      "sha256": "8562a3416a191561e8f0c6cb8d24e63af93536a58b12ed0af6381cfa27369ac6",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N1_s1_baseline200k.npz",
+      "sha256": "e4f120f0e68a7537c92aa31c94c2e49d1167efbc43754f388e319c9a3219c140",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N1_s2_baseline200k.npz",
+      "sha256": "491e51e33aacb3b080bfab67a4a0d6d3a75318cf1141c5f64c49058714350a84",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N98023_s1_baseline200k.npz",
+      "sha256": "c25356c7598458efc635fe8aa1e2e954819790d17e898a8b44e267602eb689e8",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/empirical_N98023_s2_baseline200k.npz",
+      "sha256": "476325fb9fc51adb95687fa1600288db80e677eb81e3441757b2ec1b7df526af",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N10000_s1_baseline200k.npz",
+      "sha256": "c066f8c39ffd16b17bdb22bc459cb3e98e052c91d828f2d1fe9060aff7d95010",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N10000_s2_baseline200k.npz",
+      "sha256": "60f2df5e8478787172bb4308427eaf591462bacc92a5787d3589d53736906de9",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N1000_s1_baseline200k.npz",
+      "sha256": "d203a3d8e141d5236a77b3c4e49e5d9696fe03cde6bb000d9752557b302b11e1",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N1000_s2_baseline200k.npz",
+      "sha256": "9301c70e7cd7613154901170a2e32e06d8ab8da841c932002d3bb496cf1a976b",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N100_s1_baseline200k.npz",
+      "sha256": "1116f6d1eeecb874503bf36feb4d2458143340c119f52c845711328934dbde1d",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N100_s2_baseline200k.npz",
+      "sha256": "f94fb8fee9a1b0ffcdb9999d07b023dc3ff016a60baab6c02cf283cea23e1f93",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N10_s1_baseline200k.npz",
+      "sha256": "596699a639b3ff44957e24c13820f7c9b8320ff4386f61473aaf4880f36448c0",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N10_s2_baseline200k.npz",
+      "sha256": "149ec5593f074bca7968d0eb81e03b12762b8908d209363fe62ee0a24aaf6525",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N1_s1_baseline200k.npz",
+      "sha256": "5597dc5e60d21f7402c45598295196ea4c8c492be00d7120080e9a7beca9a3aa",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N1_s2_baseline200k.npz",
+      "sha256": "ed07a14af2a4bf94115ec39ec581f5b3b9f655a5bb7c356aff6213d739f37f01",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N98023_s1_baseline200k.npz",
+      "sha256": "4e56e9eb8d1031e9d114417bfdbbaee741878dca3b86242a39d345b8481a98a1",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/mlp_N98023_s2_baseline200k.npz",
+      "sha256": "3c5be2af2d362da44d4fd69d85c8009f369e5bfae341f462a862ca327e09cb40",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N10000_s1_baseline200k.npz",
+      "sha256": "87c65851723dea2661e90f625fb6ce6c0ed72c2a0bdb96c269bb1abbfa9dd990",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N10000_s2_baseline200k.npz",
+      "sha256": "a8ba321845be818aa6ebeb13f29b3dd843172e0ba9372118ff681478d6498f64",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N1000_s1_baseline200k.npz",
+      "sha256": "ab269e0effb0717d200ae0d0551a48f3ab3252e5a75810cabadc40e50cd93575",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N1000_s2_baseline200k.npz",
+      "sha256": "78c65e1f2ac8883a1ae9d7a0a9e124570f38efc24f48bd53e71a7b4eefc799a0",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N100_s1_baseline200k.npz",
+      "sha256": "bea5a1475199f453050c03d8ee1f7293b9bf66cc13255535e6b8a4df1e2687e6",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N100_s2_baseline200k.npz",
+      "sha256": "0afe769e108120497c9aed052795fb9bcf2358642225f8270c137f3afb0e19c1",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N10_s1_baseline200k.npz",
+      "sha256": "1da48b27167c810820b7e128277f01e5f6edcd451126d39ad809a12a7e02aac4",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N10_s2_baseline200k.npz",
+      "sha256": "ca58986377c568b142d1aff7240948432998be9a6b81b5c4768802c52a9c1ada",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N1_s1_baseline200k.npz",
+      "sha256": "bbea4487f0f608ab0d0c028866c9d2d718d9c255f3115c53f0511b482b052312",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N1_s2_baseline200k.npz",
+      "sha256": "372a904ae7334872aac25aab4b92f72363fab2db65318e429bdcca6fa1bbd98d",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N98023_s1_baseline200k.npz",
+      "sha256": "c1b6785363ea6f1745d4e41847eb0a12fa0d2ced70b3691bd727b6b3b513618d",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/metrics/revalidated_20261023/unet_N98023_s2_baseline200k.npz",
+      "sha256": "d9a5911b4886417aa1d9d5beaaed81bdec366d120991ffe33af3aa75b66d4926",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/celeba/training/noise.npz",
+      "sha256": "2c20532bfe3ee298aac1cf311a07dc03e87f445e941720e481b7ffea7b6d8d2b",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure04/frozen_data/empirical_N98023_s1_baseline200k.npz",
+      "sha256": "324aebe8393a9100151729c97322a680a7a98594e9849cf770a88f4283f40880",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure04/frozen_data/empirical_N98023_s2_baseline200k.npz",
+      "sha256": "d630853a96760c6c965d329eb8457b4c86164910973be20c25633a18e3f85e9b",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure04/frozen_data/main_figure_inputs.npz",
+      "sha256": "be0920c38167893c649d854317974174d41c2114321445844c0ddb9fb19a5ac7",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure04/validated_data/empirical_N98023_s1_baseline200k.npz",
+      "sha256": "c25356c7598458efc635fe8aa1e2e954819790d17e898a8b44e267602eb689e8",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure04/validated_data/empirical_N98023_s2_baseline200k.npz",
+      "sha256": "476325fb9fc51adb95687fa1600288db80e677eb81e3441757b2ec1b7df526af",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure05/frozen_data/figure5_inputs.npz",
+      "sha256": "26c5f998e92001b82ca068df574cefd7708edc8825f5685c4e682020d7b5b359",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure05/validated_data/figure5_inputs.npz",
+      "sha256": "4af4acf979f9142cbd4c251f330d72c920881c6f8a0e69db34fa236c34e89743",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure06/frozen_data/plot_inputs.npz",
+      "sha256": "20f30028fd31f4be043ee8e3529a560dc01f2aff14406dd15918df6c649c28fe",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure07/data/perceptual/gallery.npz",
+      "sha256": "9d1951f1b57ec8d3f94ea1828320f6d3591be5e728fc100780d6d65d53ac6c7e",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "section_06_discussion/figure07/data/snapshots/states.npz",
+      "sha256": "4ba8a85e30b7b66ae49dfc05a7899c661e94aab3c4e3b55c4b5c8b35f3a13f40",
+      "reason": "image-experiment binary archive; whole-file conservative exclusion"
+    },
+    {
+      "path": "tools/export_public.py",
+      "sha256": "32bc3f98b0a65e1e74fb9d49956d8467218c443f3f64ec648fd8647fe00d498a",
+      "reason": "private release preparation material"
+    }
+  ],
+  "transformed_files": [
+    "appendix_b_protocols/reference_checks/audit_smoke.json",
+    "appendix_b_protocols/reference_checks/figure8_refinement_rows.json",
+    "appendix_b_protocols/reference_checks/figure8_refinement_summary.json",
+    "appendix_b_protocols/reference_checks/topology_check.json",
+    "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/appendix_data/synthetic_metadata.json",
+    "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/appendix_data/synthetic_rows.json",
+    "appendix_c_geometries/figure8_appendixC_20261019/output/figure8_audit.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/archived_extension_summary.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/budget_checked.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/figure8_refinement_rows.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/figure8_refinement_summary.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/image_solver_audit.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/latest_figure8_vector_check.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/mlp_recomputed.json",
+    "appendix_c_geometries/reliability_revision_20261019/evidence/topology_check.json",
+    "appendix_d_images/extended_mlp/training/original_code/core.py",
+    "appendix_d_images/extended_mlp/training/protocol.json",
+    "appendix_d_images/figure09/config.json",
+    "appendix_d_images/figure09/frozen_data/local_validation.json",
+    "appendix_d_images/figure09/metadata.json",
+    "appendix_d_images/figure09/prepare_data.py",
+    "appendix_d_images/figure09/source_manifest.json",
+    "appendix_d_images/figure09/training_metadata.json",
+    "appendix_d_images/mnist/code/run_mnist.py",
+    "appendix_d_images/mnist/evaluation/evaluate_missing.py",
+    "configs/corrections_20261023/executed/revalidate.py",
+    "configs/validation_summary.json",
+    "section_04_distribution/figure02/data/angular_density_checks.json",
+    "section_04_distribution/figure02/data/cache_signature.json",
+    "section_04_distribution/figure02/data/figure_01_context.json",
+    "section_04_distribution/figure02/data/numerical_audit.json",
+    "section_04_distribution/figure02/data/timeline_integration_audit.json",
+    "section_04_distribution/figure02/data/timeline_source.json",
+    "section_04_distribution/figure02/data/visual_layout_audit.json",
+    "section_05_early_stopping/figure03/data/inset_audit.json",
+    "section_05_early_stopping/figure03/data/numerical_audit.json",
+    "section_06_discussion/celeba/metrics/protocol/allocation_revision.json",
+    "section_06_discussion/celeba/metrics/protocol/execution_manifest.json",
+    "section_06_discussion/celeba/metrics/protocol/followup_experiment.json",
+    "section_06_discussion/celeba/metrics/protocol/runtime_and_sources.json",
+    "section_06_discussion/celeba/metrics/protocol/step_cap_revision.json",
+    "section_06_discussion/celeba/training/code/core.py",
+    "section_06_discussion/celeba/training/code/preflight.py",
+    "section_06_discussion/celeba/training/protocol/experiment.json",
+    "section_06_discussion/celeba/training/protocol/file_hashes.json",
+    "section_06_discussion/celeba/training/qa/preflight.json",
+    "section_06_discussion/empirical_readouts/code/run_pixel_empirical.py",
+    "section_06_discussion/field_replacement/baseline/evaluate_lpips.py",
+    "section_06_discussion/field_replacement/baseline/evaluate_scan.py",
+    "section_06_discussion/field_replacement/baseline/main/manifest.json",
+    "section_06_discussion/field_replacement/baseline/refinement/manifest.json",
+    "section_06_discussion/field_replacement/evaluation/evaluate_lpips.py",
+    "section_06_discussion/field_replacement/evaluation/evaluate_snapshots.py",
+    "section_06_discussion/field_replacement/evaluation/evaluate_wider.py",
+    "section_06_discussion/field_replacement/evaluation/main/manifest.json",
+    "section_06_discussion/field_replacement/evaluation/refinement/manifest.json",
+    "section_06_discussion/field_replacement/evaluation/snapshots/manifest.json",
+    "section_06_discussion/figure04/frozen_data/main_figure_source_hashes.json",
+    "section_06_discussion/figure04/frozen_data/main_original_plot_manifest.json",
+    "section_06_discussion/figure05/collect_inputs.py",
+    "section_06_discussion/figure05/frozen_data/provenance.json",
+    "section_06_discussion/figure05/validated_data/provenance.json",
+    "section_06_discussion/figure06/frozen_data/provenance.json",
+    "section_06_discussion/figure07/data/main/manifest.json",
+    "shared/celeba_preprocessing/project_paths.py",
+    "shared/image_fields/eval_windows.py",
+    "shared/image_fields/outputs/window_demo/manifest.json",
+    "shared/image_fields/outputs/window_preview/manifest.json",
+    "shared/image_fields/src/celeba_nn_stage/data.py",
+    "shared/image_fields/train_flow_matching.py",
+    "shared/synthetic/data/designs/circle_N16_a0.0_design_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r1/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r2/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r3/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r4/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r5/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r6/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.1_iid_r7/metadata.json",
+    "shared/synthetic/data/designs/circle_N16_a0.4_design_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N32_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N64_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/circle_N8_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r0/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r1/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r2/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r3/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r4/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r5/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r6/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N16_a0.1_iid_r7/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N32_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N64_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/ellipse_N8_a0.1_design_r0/metadata.json",
+    "shared/synthetic/data/designs/sphere_N16_a0.0_design_r0/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_design_r0/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r0/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r1/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r2/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r3/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r4/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r5/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r6/metadata.json",
+    "shared/synthetic/data/designs/sphere_N32_a0.0_iid_r7/metadata.json",
+    "shared/synthetic/data/designs/sphere_N64_a0.0_design_r0/metadata.json",
+    "shared/synthetic/data/designs/sphere_N8_a0.0_design_r0/metadata.json",
+    "shared/synthetic/protocol.json",
+    "tools/prepare_compute.py"
+  ],
+  "baseline_commit": "b275147138903823e1ae49793223481d11fd68de"
+}

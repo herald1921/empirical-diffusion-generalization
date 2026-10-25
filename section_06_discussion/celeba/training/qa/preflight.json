@@ -1,0 +1,66 @@
+{
+  "legacy_reproduction": {
+    "max_abs": 0.003662019968032837,
+    "rmse": 0.0002846382849384099
+  },
+  "unet_refinement": {
+    "rmse_each": [
+      0.00045710813719779253,
+      0.0005435385392047465,
+      0.0006027704803273082,
+      0.0010493495501577854
+    ],
+    "finite": true
+  },
+  "empirical_N1_refinement": {
+    "readout_rmse_each": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "empirical_N98023_refinement": {
+    "readout_rmse_each": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "readout_identity_max_abs": 3.5764051953268705e-07,
+  "reuse": {
+    "allowed_case": "unet/N98023/s1",
+    "sha256": "69e39708b2a4319e47ce5f5ea9280177f76cb0a69491a18cee18102a29734cf0",
+    "weights": "ema_model",
+    "historical_dataset_hash_not_available": true,
+    "same_declared_dataset_and_partition_path": true
+  },
+  "mlp_pilot_N1": {
+    "steps": 10000,
+    "parameters": 85367041,
+    "loss_first100": 0.25980727408081294,
+    "loss_last100": 0.012315827094134875,
+    "silu_derivative_fraction_above_1e-4": 0.9999853372573853,
+    "midtime_clean_mse": 0.00010741420555859804,
+    "initial_model_midtime_mse": 0.2804994583129883,
+    "time_sensitivity_rms": 2.213688850402832,
+    "seconds": 199.18207955360413,
+    "raw_pilot_only_not_ema": true,
+    "passed": true
+  },
+  "mlp_pilot_N10000": {
+    "steps": 10000,
+    "parameters": 85367041,
+    "loss_first100": 0.38082738235592845,
+    "loss_last100": 0.1833074226975441,
+    "silu_derivative_fraction_above_1e-4": 0.9997167587280273,
+    "midtime_clean_mse": 0.015591427683830261,
+    "initial_model_midtime_mse": 0.21820296347141266,
+    "time_sensitivity_rms": 1.5624473094940186,
+    "seconds": 200.6472351551056,
+    "raw_pilot_only_not_ema": true,
+    "passed": true
+  },
+  "passed": true
+}

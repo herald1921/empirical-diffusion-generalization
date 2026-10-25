@@ -1,0 +1,22 @@
+{
+  "python": "3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]",
+  "torch": "2.7.0a0+7c8ec84dab.nv25.03",
+  "cuda": "12.8",
+  "numpy": "1.26.4",
+  "matplotlib": "3.10.1",
+  "files": {
+    "/root/figure08_gap_20260922/code/common.py": "8246b60a165aa121413aec2e300ec2499f81a8ec7d636031b9244aa2441ad293",
+    "/root/figure08_gap_20260922/code/plot_results.py": "fc65fcc7571a0cad13b1e5dfda84fbe10e3e747d1562ba8e0212d467b24a891a",
+    "/root/figure08_gap_20260922/code/archive_verified_stage.py": "65e18b3df411207b5b50aa06b79c6966f00c7c01368ed1b6c0d160e2468371a7",
+    "/root/figure08_gap_20260922/code/plot_publication.py": "2ca67e1c234b10a15a3f7b7a3ca230acb5540dfc427f766fbe6a41333f79c683",
+    "/root/figure08_gap_20260922/code/run_baseline.py": "202b9e41224cc72529e4942e72df92b931afb678fccb7e73ae20422c21d1b871",
+    "/root/figure08_gap_20260922/code/build_report.py": "4a4628c963c414988acb09dc63e1aaeb19f55628f4f4b34cd9fdb8bb50084778",
+    "/root/figure08_gap_20260922/code/status_snapshot.py": "c1ccce0faaf05c0f242fce3cd04bb72824c41a5ccee4373b999a43f21ba2e80f",
+    "/root/figure08_gap_20260922/code/run_extension.py": "09711ded43441d23df8eee3b312d91915818f0008b0511b5b1e52fd843afaf55",
+    "/root/figure08_gap_20260922/code/evaluate_gap.py": "823e0e3e79aaa7992a5d2b8647274782bf59d4c3176e258fdb108f331e1ac94b",
+    "/root/figure07_cfm_20260921/code/models.py": "7bade55e254bf06528f504777386460c89218e4c6c2ebe9ef7fc6751cc3f88ab",
+    "/root/figure07_cfm_20260921/code/velocity_unet.py": "79a46363c00b2f0a762b263395b4489f92542e8f9d4b50a0fd8ed371c5ec0bc3",
+    "/root/figure07_cfm_20260921/code/core.py": "1a616c41c530bc11c05a923013d9cf41dab48de686ce7cd5729821dc2d6cbcf3",
+    "/root/figure07_cfm_20260921/code/sampling.py": "c86f825c04d45b2fddb09ca94378320569f0fc342d91950729fc18c1e00e35ac"
+  }
+}

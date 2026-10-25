@@ -1,0 +1,77 @@
+{
+  "run_id": "celeba80_mlp_10h_20261018_lowmem",
+  "remote_root": "/root/shared-nvme/celeba80_mlp_10h_20261018_lowmem",
+  "original_code": "/root/figure07_cfm_20260921/code",
+  "gpu_uuid": "GPU-f41e7540-c606-8d7b-559c-3bad3b6c0596",
+  "duration_seconds": 36000,
+  "checkpoint_every": 500000,
+  "minimum_free_bytes": 20000000000,
+  "batch_size": 32,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0,
+  "gradient_clip": 1.0,
+  "ema_decay": 0.9999,
+  "parameters": 85367041,
+  "precision": "bf16 autocast; FP32 parameters, optimizer and EMA",
+  "schedule": "constant original learning rate; no convergence early stop",
+  "optimizer_boundary": "Original paper-branch final files contain no optimizer or RNG. Restore raw and EMA weights; initialize a new AdamW and record the boundary explicitly. This is weight continuation, not bitwise continuation of the old optimizer trajectory.",
+  "training_data": "Existing core.active: first N of S1, last N of S2; image-disjoint groups",
+  "fm_objective": "tau uniform(0,1); X=(1-tau)*epsilon+tau*z; velocity target=z-epsilon",
+  "synchronization": "All four workers finish preflight and wait at a barrier; one common start time and ten-hour deadline",
+  "checkpoint_contents": [
+    "raw model",
+    "EMA",
+    "AdamW including moments and optimizer step",
+    "global step",
+    "dedicated training generator",
+    "CPU and CUDA RNG",
+    "numpy and Python RNG",
+    "protocol",
+    "source provenance",
+    "common start and deadline",
+    "timing and training loss"
+  ],
+  "checkpoint_policy": "Immutable full checkpoints at global multiples of 500000; initial replay-check checkpoint and final checkpoint; atomic rename, SHA256 and reload validation; retain every committed checkpoint",
+  "evaluation": "Before and after continuation: paired image-disjoint train/other panels, raw and EMA, per-time velocity MSE and clean-readout MSE. Diagnostic samples are separate from the training RNG.",
+  "tasks": [
+    {
+      "key": "N10000_s1",
+      "n": 10000,
+      "group": "s1",
+      "start_step": 200000,
+      "source": "/root/figure07_cfm_20260921/runs/mlp/N10000/s1/final.pt",
+      "source_sha256": "9bf1cd32b69eedf058e91f9912b2504d2dc94aade88e0975536390a438160a35",
+      "stream_seed": 202610171001
+    },
+    {
+      "key": "N10000_s2",
+      "n": 10000,
+      "group": "s2",
+      "start_step": 200000,
+      "source": "/root/figure07_cfm_20260921/runs/mlp/N10000/s2/final.pt",
+      "source_sha256": "930f3425dca7e32e5edd33308983f4ba19cf737aff71d16f81bca3794900299b",
+      "stream_seed": 202610171002
+    },
+    {
+      "key": "N98023_s1",
+      "n": 98023,
+      "group": "s1",
+      "start_step": 200000,
+      "source": "/root/figure07_cfm_20260921/runs/mlp/N98023/s1/final.pt",
+      "source_sha256": "432a6856bb40bfc14d94c612d9cf22885862eb20b11db63712553afdb238e442",
+      "stream_seed": 202610179801
+    },
+    {
+      "key": "N98023_s2",
+      "n": 98023,
+      "group": "s2",
+      "start_step": 200000,
+      "source": "/root/figure07_cfm_20260921/runs/mlp/N98023/s2/final.pt",
+      "source_sha256": "5665d59cf773eec11863e2a8ea6dc868cd9b6120b88a81de650e3e556435a869",
+      "stream_seed": 202610179802
+    }
+  ],
+  "user_confirmed_startpoint_change": "After the two archived N10000 300k checkpoints were found missing, the user explicitly chose all four existing paper-branch 200k checkpoints; new AdamW is confirmed.",
+  "reuse_recovery_root": "/root/shared-nvme/celeba80_mlp_10h_20261018",
+  "memory_policy": "Only active training images on GPU and two 512-image CPU panels; sequential full recovery tests; reuse old recovery files after exact first-update tensor, optimizer and RNG equality verification. No old files are deleted."
+}

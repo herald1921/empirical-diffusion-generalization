@@ -1,0 +1,68 @@
+[
+  {
+    "shape": "ellipse",
+    "metric": "w2",
+    "normalized_vector_residual": 8.526512829121202e-14,
+    "path": 581
+  },
+  {
+    "shape": "ellipse",
+    "metric": "wt",
+    "normalized_vector_residual": 8.526512829121202e-14,
+    "path": 581
+  },
+  {
+    "shape": "ellipse",
+    "metric": "wn",
+    "normalized_vector_residual": 1.1368683772161603e-13,
+    "path": 581
+  },
+  {
+    "shape": "sphere",
+    "metric": "w2",
+    "normalized_vector_residual": 1.7053025658242404e-13,
+    "path": 581
+  },
+  {
+    "shape": "sphere",
+    "metric": "wt",
+    "normalized_vector_residual": 5.684341886080802e-14,
+    "path": 581
+  },
+  {
+    "shape": "sphere",
+    "metric": "wn",
+    "normalized_vector_residual": 2.842170943040401e-14,
+    "path": 581
+  },
+  {
+    "shape": "segment",
+    "metric": "w2",
+    "normalized_vector_residual": 8.526512829121202e-14,
+    "path": 581
+  },
+  {
+    "shape": "segment",
+    "metric": "wt",
+    "normalized_vector_residual": 8.526512829121202e-14,
+    "path": 581
+  },
+  {
+    "shape": "eight",
+    "metric": "w2",
+    "normalized_vector_residual": 1.1368683772161603e-13,
+    "path": 581
+  },
+  {
+    "shape": "eight",
+    "metric": "wt",
+    "normalized_vector_residual": 8.526512829121202e-14,
+    "path": 581
+  },
+  {
+    "shape": "eight",
+    "metric": "wn",
+    "normalized_vector_residual": 2.842170943040401e-14,
+    "path": 581
+  }
+]

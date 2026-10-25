@@ -1,0 +1,176 @@
+{
+  "manuscript": "Topology and Distributional Generalization in Empirical Diffusion Models",
+  "reference_date": "2026-10-23",
+  "reference_source": "Live Overleaf source readback with targeted experimental corrections; original paper archive retained separately",
+  "flow": {
+    "alpha": "tau",
+    "sigma": "1-tau",
+    "eta": "(1-tau)/tau",
+    "clean_readout": "x+(1-tau)*v(x,tau)",
+    "field_replacement_output": "integrated state at T=0.99, without terminal denoising"
+  },
+  "celeba": {
+    "crop": [
+      9,
+      29,
+      169,
+      189
+    ],
+    "size": [
+      80,
+      80
+    ],
+    "grayscale": "RGB average",
+    "retained": 196047,
+    "group_size": 98023,
+    "unused_middle_images": 1,
+    "n_values": [
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      98023
+    ],
+    "s1_subset": "prefix",
+    "s2_subset": "suffix",
+    "identity_disjoint_verified": false,
+    "stopping_tau": 0.15,
+    "training_steps": 200000,
+    "batch_size": 32,
+    "model_seed": 0,
+    "parameters": {
+      "mlp": 85367041,
+      "unet": 8292881
+    },
+    "data_contract": "shared/celeba_preprocessing/paper_contract/contract.json"
+  },
+  "mnist": {
+    "size": [
+      28,
+      28
+    ],
+    "scaling": "divide by 255",
+    "training_images": 60000,
+    "split_seed": 20260924,
+    "group_size": 30000,
+    "n_values": [
+      100,
+      1000,
+      10000
+    ],
+    "subset": "prefix in both groups",
+    "stopping_tau": 0.25,
+    "training_steps": 100000,
+    "batch_size": 128,
+    "model_seed": 0,
+    "parameters": {
+      "mlp": 4538384,
+      "unet": 1310689
+    }
+  },
+  "training": {
+    "objective": "independent-endpoint linear flow matching, pixel-mean squared velocity loss",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0002,
+    "weight_decay": 0,
+    "ema_decay": 0.9999,
+    "gradient_clip": 1,
+    "precision": "BF16 autocast, FP32 parameters and EMA",
+    "tau_sampling": "uniform",
+    "initializations_per_configuration": 1
+  },
+  "readouts": {
+    "paired_gaussian_seeds": "0..255",
+    "heun_intervals": {
+      "celeba": 160,
+      "mnist": 320
+    },
+    "tau_end": 0.999,
+    "distances": "minimum pixel RMSE on unclipped clean readouts",
+    "display": "clipped to [0,1]",
+    "bootstrap": {
+      "unit": "paired Gaussian seed, directions averaged within seed",
+      "resamples": 2000,
+      "seed": 22092027,
+      "coverage": 0.95,
+      "interval_type": "pointwise percentile"
+    },
+    "nearest_search": "Exhaustive direct float64 Euclidean distances, divided by sqrt(D), without candidate truncation (CelebA corrected measurements)"
+  },
+  "common_inputs": {
+    "queries": 32,
+    "tau": [
+      0.02,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      0.95
+    ],
+    "metric": "(1-tau)*sqrt(mean over all queries and pixels of (v_A-v_B)^2)"
+  },
+  "field_replacement": {
+    "seeds": 64,
+    "noise_seed": 20260810,
+    "window_width": 0.3,
+    "window_starts": [
+      0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.69
+    ],
+    "window_convention": "[a,b)",
+    "solver": "explicit midpoint RK2",
+    "maximum_dt": 0.005,
+    "terminal_tau": 0.99
+  },
+  "synthetic_main_circle": {
+    "n": 16,
+    "radius": 2,
+    "angular_density": "(1+0.1*cos(theta))/(2*pi)",
+    "noise_scales": 105,
+    "source_target_nodes": 2048,
+    "refinement_nodes": 4096
+  },
+  "synthetic_appendix": {
+    "supports": [
+      "ellipse",
+      "sphere",
+      "segment",
+      "eight"
+    ],
+    "n": 16,
+    "noise_scales": 16,
+    "baseline_nodes": 512,
+    "refinement_nodes": [
+      1024,
+      2048
+    ],
+    "independent_512_scramble": true,
+    "transport": "unregularized Euclidean W2, equal-weight linear assignment",
+    "topology": "exact GUDHI alpha complex, F_11, squared-radius filtration, min_persistence=1e-12"
+  },
+  "extended_mlp": {
+    "baseline_steps": 200000,
+    "initial_boundary": "restore raw and EMA weights; new AdamW and new training random stream",
+    "later_restarts": "restore complete continuation state",
+    "final_s1_steps": {
+      "10000": 982001,
+      "98023": 982582
+    },
+    "purpose": "fixed-input output stability, not an optimization convergence certificate"
+  }
+}

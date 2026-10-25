@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "demo": true,
+  "image_shape": [
+    24,
+    24
+  ],
+  "num_seeds": 4,
+  "diagnostic_seeds": 2,
+  "gallery_seeds": 2,
+  "noise_seed": 20260810,
+  "solver": "explicit midpoint RK2",
+  "grid": [
+    0.0,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.125,
+    0.15,
+    0.175,
+    0.2,
+    0.225,
+    0.25,
+    0.275,
+    0.3,
+    0.325,
+    0.35,
+    0.375,
+    0.4,
+    0.425,
+    0.45,
+    0.475,
+    0.5,
+    0.525,
+    0.55,
+    0.575,
+    0.6,
+    0.625,
+    0.65,
+    0.675,
+    0.7,
+    0.725,
+    0.75,
+    0.775,
+    0.8,
+    0.825,
+    0.85,
+    0.875,
+    0.9,
+    0.925,
+    0.95,
+    0.975,
+    0.98,
+    1.0
+  ],
+  "probe_times": [
+    0.0,
+    0.1,
+    0.2,
+    0.4,
+    0.5,
+    0.8,
+    0.9,
+    0.98
+  ],
+  "methods": [
+    {
+      "id": "full_nn",
+      "label": "Full NN",
+      "direction": "baseline_nn",
+      "window": null,
+      "baseline": "full_nn"
+    },
+    {
+      "id": "full_emp",
+      "label": "Full empirical",
+      "direction": "baseline_emp",
+      "window": null,
+      "baseline": "full_emp"
+    },
+    {
+      "id": "nn_emp_nn_w_0p1_0p2",
+      "label": "NN / empirical / NN [0.1, 0.2)",
+      "direction": "nn_emp_nn",
+      "window": [
+        0.1,
+        0.2
+      ],
+      "baseline": "full_nn"
+    },
+    {
+      "id": "nn_emp_nn_w_0p4_0p5",
+      "label": "NN / empirical / NN [0.4, 0.5)",
+      "direction": "nn_emp_nn",
+      "window": [
+        0.4,
+        0.5
+      ],
+      "baseline": "full_nn"
+    },
+    {
+      "id": "nn_emp_nn_w_0p8_0p9",
+      "label": "NN / empirical / NN [0.8, 0.9)",
+      "direction": "nn_emp_nn",
+      "window": [
+        0.8,
+        0.9
+      ],
+      "baseline": "full_nn"
+    },
+    {
+      "id": "emp_nn_emp_w_0p1_0p2",
+      "label": "Empirical / NN / empirical [0.1, 0.2)",
+      "direction": "emp_nn_emp",
+      "window": [
+        0.1,
+        0.2
+      ],
+      "baseline": "full_emp"
+    },
+    {
+      "id": "emp_nn_emp_w_0p4_0p5",
+      "label": "Empirical / NN / empirical [0.4, 0.5)",
+      "direction": "emp_nn_emp",
+      "window": [
+        0.4,
+        0.5
+      ],
+      "baseline": "full_emp"
+    },
+    {
+      "id": "emp_nn_emp_w_0p8_0p9",
+      "label": "Empirical / NN / empirical [0.8, 0.9)",
+      "direction": "emp_nn_emp",
+      "window": [
+        0.8,
+        0.9
+      ],
+      "baseline": "full_emp"
+    }
+  ],
+  "weights": "ema",
+  "precision": "fp32",
+  "batch_size": 2,
+  "reference_chunk_size": 4096,
+  "provenance": {
+    "target": "synthetic Gaussian shapes; NN label means analytic continuous-target field in DEMO only"
+  },
+  "s1_sha256": "c9203f7d661ceb4053f15149fe8e3b3e29c06437ab67b46769613628c94873bc",
+  "s2_sha256": "0a04e6ce2292b39b1fc173670e457f8d80677db6f3d24ed44b0fe1b0fdf253d4",
+  "s1_count": 24,
+  "s2_count": 24,
+  "source_hashes": {
+    "eval_windows.py": "5f243496cdf69ce76218837870a05422a361c611797394dda027f39c680e2a98",
+    "window_experiment.py": "3826881faade452b7db99c462fe5bab057407fea5fbad1bd24c90ebf1a4d7862",
+    "empirical_t.py": "5a3545095e797b6349ebcfad5ced957f5c5869ddeb8eabefa2e4d8bc0a42e8ae",
+    "model.py": "79a46363c00b2f0a762b263395b4489f92542e8f9d4b50a0fd8ed371c5ec0bc3",
+    "data.py": "a64ee36f85734aab769a773e4b158d2bc657c62f266d1866766359e01ca3a1ff",
+    "sampling.py": "70cd4da9378dba3be6d5a484fc3f5815df01d394a12b9d6576faeed523de9a31"
+  },
+  "diagnostic_selection": "first K fixed Gaussian seeds; same subset for every method",
+  "metrics_note": "Pixel proximity and trajectory changes are NOT standalone quality or generalization scores.",
+  "runtime": {
+    "torch": "2.9.1+cpu",
+    "device": "cpu"
+  }
+}

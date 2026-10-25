@@ -1,0 +1,61 @@
+{
+  "kind": "unet",
+  "n": 100,
+  "group": "s1",
+  "signature": "ac64df7917b74aa63c04a6d5b144750193155368f6e3c857dbb5e06e0a45d073",
+  "parameters": 1310689,
+  "config": {
+    "n_values": [
+      100,
+      1000,
+      10000
+    ],
+    "groups": [
+      "s1",
+      "s2"
+    ],
+    "steps": 100000,
+    "batch_size": 128,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0,
+    "ema_decay": 0.9999,
+    "gradient_clip": 1.0,
+    "eval_every": 10000,
+    "checkpoints": [
+      25000,
+      50000,
+      100000
+    ],
+    "model_seed": 0,
+    "split_seed": 20260924,
+    "stream_seed": 202609240,
+    "samples": 256,
+    "sampler_intervals": 320,
+    "tau_end": 0.999,
+    "capture_tau": [
+      0.0,
+      0.01,
+      0.02,
+      0.035,
+      0.05,
+      0.075,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5,
+      0.65,
+      0.8,
+      0.9,
+      0.95,
+      0.98,
+      0.995,
+      0.999
+    ],
+    "objective": "independent Gaussian-to-data linear conditional flow matching",
+    "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+    "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+  }
+}

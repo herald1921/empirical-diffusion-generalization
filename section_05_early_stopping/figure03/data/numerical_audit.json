@@ -1,0 +1,40 @@
+{
+  "config": {
+    "n_train": 16,
+    "radius": 2.0,
+    "amplitude": 0.1,
+    "seed": 20260920,
+    "selected_eta": 0.16,
+    "source_nodes": 2048,
+    "target_nodes": 2048,
+    "normal_source_nodes": 131072
+  },
+  "endpoint": 0.22706922068744215,
+  "eta_normal_sufficient": 0.2357022603955158,
+  "t_normal_sufficient": 0.8526369332410573,
+  "coordinate": "U = X / alpha(t); eta = cot(pi*t/2)",
+  "dimension_panel": "Exact orthogonal-padding identity; no independent high-dimensional run claimed.",
+  "max_lp_duality_gap": 3.68606534184579e-12,
+  "max_lp_marginal_error": 0.0,
+  "max_lp_dual_violation": 2.1502394320378065e-11,
+  "caveat": "Quadrature sensitivity checks are not statistical confidence intervals or rigorous source error bounds.",
+  "training_sha256": "bbecad6f152371558ad11c01af1f3f2130fc2455b2bd51a13f80b71826087d15",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "POT": "0.9.7.post1"
+  },
+  "initial_qmc_normal_sensitivity_max": 0.0017554857178756073,
+  "initial_qmc_normal_sensitivity_relative_max": 0.2641590128036562,
+  "initial_qmc_max_refinement_w2_change": 0.027645674012303,
+  "normal_estimator": "Split polar Gauss-Legendre, orders 32 and 64; radial cutoff R+9 eta",
+  "normal_sensitivity_max": 5.688786184898653e-07,
+  "normal_sensitivity_relative_max": 1.625061337733029e-06,
+  "polar_mass_error_max": 2.4424906541753444e-14,
+  "total_estimator": "Exact radial-cost control variate using polar normal moment for eta >= .06",
+  "tangential_estimator": "Polar pushforward + 2048 equal-mass angular quantiles for Tweedie at eta >= .08; QMC endpoint tail",
+  "max_dense_angular_refinement_change": 2.281894450421179e-05,
+  "max_refinement_w2_change": 0.0022647447448017125
+}

@@ -1,0 +1,70 @@
+{
+  "layout": "one dual-axis plot: distances left, Betti counts right; one row of three matched Phase II states",
+  "topology_object": "union of radius c*eta disks centered at the same training samples as Figure 1",
+  "topology_check": "passed: AlphaComplex, F2, 401 independent times",
+  "recovery_interval": [
+    0.6961024100202854,
+    0.9272491514613013
+  ],
+  "selected": [
+    {
+      "label": "A",
+      "t": 0.74290322580633,
+      "eta": 0.427334903816,
+      "beta0": 1,
+      "beta1": 1,
+      "w2": 0.4248186413302967,
+      "wt": 0.003622369102659838,
+      "wn": 0.4246887780708995,
+      "w2_over_sn": 1.8708772595606609,
+      "wt_over_sn": 0.01595270856918993,
+      "wn_over_sn": 1.8703053491141282
+    },
+    {
+      "label": "B",
+      "t": 0.840483870967557,
+      "eta": 0.255946349302,
+      "beta0": 1,
+      "beta1": 1,
+      "w2": 0.2564601583276327,
+      "wt": 0.024170271629508865,
+      "wn": 0.25540823532327384,
+      "w2_over_sn": 1.1294360263853056,
+      "wt_over_sn": 0.10644450866715631,
+      "wn_over_sn": 1.1248034169934462
+    },
+    {
+      "label": "C",
+      "t": 0.9208331516788689,
+      "eta": 0.125,
+      "beta0": 1,
+      "beta1": 1,
+      "w2": 0.1658926492249427,
+      "wt": 0.10895025575297355,
+      "wn": 0.12493858767857322,
+      "w2_over_sn": 0.7305818407387402,
+      "wt_over_sn": 0.4798107617718131,
+      "wn_over_sn": 0.5502224709290282
+    }
+  ],
+  "field_of_view_R": [
+    -1.75,
+    1.75
+  ],
+  "integration": {
+    "signature": {
+      "source_sha256": "bfdd2f4146ab70bd6efa276e3bcb6de7435aebff8793d325cc8f0fbcf3565f2b",
+      "etas": [
+        0.427334903816,
+        0.255946349302,
+        0.125
+      ],
+      "method": "DOP853-log-noise-v1"
+    },
+    "max_refinement_error": 4.464655362101499e-11,
+    "figure_01_reference_error": 6.125373197167204e-15,
+    "particles": 512,
+    "same_initial_particles": true
+  },
+  "interpretation": "Across A-C WT rises while W2 still falls; the late full-process rise occurs later."
+}

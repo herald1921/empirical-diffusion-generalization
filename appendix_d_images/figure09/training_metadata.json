@@ -1,0 +1,866 @@
+[
+  {
+    "method": "mlp",
+    "n": 100,
+    "group": "s1",
+    "config": {
+      "kind": "mlp",
+      "n": 100,
+      "group": "s1",
+      "signature": "290f36d1ebb0348c5d8e8ab22da64b76aeb6e8e08ad986bd8d1cfbe80f0170db",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "290f36d1ebb0348c5d8e8ab22da64b76aeb6e8e08ad986bd8d1cfbe80f0170db",
+      "step": 100000,
+      "checkpoint_sha256": "dfec6b4fdc589a19bcb21e6539f2c8e48a99e82b4c239523b4315a8d5ab44c57"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N100/s1/ema_100000.pt"
+  },
+  {
+    "method": "mlp",
+    "n": 100,
+    "group": "s2",
+    "config": {
+      "kind": "mlp",
+      "n": 100,
+      "group": "s2",
+      "signature": "8588cd1659ea9ad34252e02c756571186ee7ac4679eb5a12608bfa565d505f54",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "8588cd1659ea9ad34252e02c756571186ee7ac4679eb5a12608bfa565d505f54",
+      "step": 100000,
+      "checkpoint_sha256": "071daab2b719f55b9251c2aa47422a57cff6c398dc5a07d87c5a0e32ab8916b8"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N100/s2/ema_100000.pt"
+  },
+  {
+    "method": "mlp",
+    "n": 1000,
+    "group": "s1",
+    "config": {
+      "kind": "mlp",
+      "n": 1000,
+      "group": "s1",
+      "signature": "c59377eabca95f5f7e147df860bb4df96fe6e557c124b5c71877a57bffee8e13",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "c59377eabca95f5f7e147df860bb4df96fe6e557c124b5c71877a57bffee8e13",
+      "step": 100000,
+      "checkpoint_sha256": "32e7b40164b8bfe41e7d973190de13c26899320db983ba3031d3bea858f0e5a8"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N1000/s1/ema_100000.pt"
+  },
+  {
+    "method": "mlp",
+    "n": 1000,
+    "group": "s2",
+    "config": {
+      "kind": "mlp",
+      "n": 1000,
+      "group": "s2",
+      "signature": "924bd4d40bed84d7a3a19518f8d3f3f4499883021f441907bd5fc631c854e0e3",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "924bd4d40bed84d7a3a19518f8d3f3f4499883021f441907bd5fc631c854e0e3",
+      "step": 100000,
+      "checkpoint_sha256": "6ae6ae80f0427d7d5e2063f6d6f483bccf419015e21863e2b851fa8ce25253eb"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N1000/s2/ema_100000.pt"
+  },
+  {
+    "method": "mlp",
+    "n": 10000,
+    "group": "s1",
+    "config": {
+      "kind": "mlp",
+      "n": 10000,
+      "group": "s1",
+      "signature": "74cd1b79c128836238eaaee425ab811942d8fdb0cba131790452d92b7a03033d",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "74cd1b79c128836238eaaee425ab811942d8fdb0cba131790452d92b7a03033d",
+      "step": 100000,
+      "checkpoint_sha256": "53487601ac02ddf01c878984d0b406624e247263eb2020666e978787e6faa978"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N10000/s1/ema_100000.pt"
+  },
+  {
+    "method": "mlp",
+    "n": 10000,
+    "group": "s2",
+    "config": {
+      "kind": "mlp",
+      "n": 10000,
+      "group": "s2",
+      "signature": "1ed2859cefa6cbd54b859af649df29c1825a76bf63c89323633954c925e694da",
+      "parameters": 4538384,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "1ed2859cefa6cbd54b859af649df29c1825a76bf63c89323633954c925e694da",
+      "step": 100000,
+      "checkpoint_sha256": "cc3512804043f6baa4c063bd89def94a92a4222231e34f09a5154375e0359233"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N10000/s2/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 100,
+    "group": "s1",
+    "config": {
+      "kind": "unet",
+      "n": 100,
+      "group": "s1",
+      "signature": "ac64df7917b74aa63c04a6d5b144750193155368f6e3c857dbb5e06e0a45d073",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "ac64df7917b74aa63c04a6d5b144750193155368f6e3c857dbb5e06e0a45d073",
+      "step": 100000,
+      "checkpoint_sha256": "c6daa403b1f22993a8ac0babc7d154f2fce68d7327390c3885d121b7b958bc40"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N100/s1/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 100,
+    "group": "s2",
+    "config": {
+      "kind": "unet",
+      "n": 100,
+      "group": "s2",
+      "signature": "e648776f9e3db3cfb270bef988cff4470bc6b7d03773d601e9f4500a16b996d8",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "e648776f9e3db3cfb270bef988cff4470bc6b7d03773d601e9f4500a16b996d8",
+      "step": 100000,
+      "checkpoint_sha256": "422eac483bc821f7bfbf66e36bc36b9eb5d361e89b9f1851921d1b7ea3aa1419"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N100/s2/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 1000,
+    "group": "s1",
+    "config": {
+      "kind": "unet",
+      "n": 1000,
+      "group": "s1",
+      "signature": "706662010e9d4f3da3d0aa75c894d957f83d67dac66e81a799b89f7440ff0d51",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "706662010e9d4f3da3d0aa75c894d957f83d67dac66e81a799b89f7440ff0d51",
+      "step": 100000,
+      "checkpoint_sha256": "a173908f3687e9d96983bbd69fcaa39fa04498471881667b3aee19d47fab4d23"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N1000/s1/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 1000,
+    "group": "s2",
+    "config": {
+      "kind": "unet",
+      "n": 1000,
+      "group": "s2",
+      "signature": "28ca2d3d13c6b6fe58eae6fcc3afa31907625dfcf6b5b5fef634c1595d0c0766",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "28ca2d3d13c6b6fe58eae6fcc3afa31907625dfcf6b5b5fef634c1595d0c0766",
+      "step": 100000,
+      "checkpoint_sha256": "8b649116569375377a8e897e40ce6f983acd35aea3b9515abe95cfba4e34550d"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N1000/s2/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 10000,
+    "group": "s1",
+    "config": {
+      "kind": "unet",
+      "n": 10000,
+      "group": "s1",
+      "signature": "6ff2d602bced2a7bee8e23c4c3bcc65f98239a217afaa9e9b4e4add5220349cb",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "6ff2d602bced2a7bee8e23c4c3bcc65f98239a217afaa9e9b4e4add5220349cb",
+      "step": 100000,
+      "checkpoint_sha256": "414e7f1f464f001ab830abe92b41b7a56384ece52c599bf90899593cd497e3fb"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N10000/s1/ema_100000.pt"
+  },
+  {
+    "method": "unet",
+    "n": 10000,
+    "group": "s2",
+    "config": {
+      "kind": "unet",
+      "n": 10000,
+      "group": "s2",
+      "signature": "118d0d3243e97b0a22b27c84dc933320af472d4d9be1a5a22823a057f04b3cd4",
+      "parameters": 1310689,
+      "config": {
+        "n_values": [
+          100,
+          1000,
+          10000
+        ],
+        "groups": [
+          "s1",
+          "s2"
+        ],
+        "steps": 100000,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0,
+        "ema_decay": 0.9999,
+        "gradient_clip": 1.0,
+        "eval_every": 10000,
+        "checkpoints": [
+          25000,
+          50000,
+          100000
+        ],
+        "model_seed": 0,
+        "split_seed": 20260924,
+        "stream_seed": 202609240,
+        "samples": 256,
+        "sampler_intervals": 320,
+        "tau_end": 0.999,
+        "capture_tau": [
+          0.0,
+          0.01,
+          0.02,
+          0.035,
+          0.05,
+          0.075,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5,
+          0.65,
+          0.8,
+          0.9,
+          0.95,
+          0.98,
+          0.995,
+          0.999
+        ],
+        "objective": "independent Gaussian-to-data linear conditional flow matching",
+        "nearest_metric": "pixel RMSE; unclipped readout; equal candidate counts",
+        "model_selection": "fixed final EMA at 100000 steps; no best-test checkpoint selection"
+      }
+    },
+    "complete": {
+      "signature": "118d0d3243e97b0a22b27c84dc933320af472d4d9be1a5a22823a057f04b3cd4",
+      "step": 100000,
+      "checkpoint_sha256": "053a90787285a3df28728b141e0769e4df7955e3d4d1b1f1f36eef380ae2e19d"
+    },
+    "cloud_checkpoint": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N10000/s2/ema_100000.pt"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "config": {
+    "n_train": 16,
+    "n_particles": 512,
+    "n_traces": 16,
+    "radius": 2.0,
+    "angular_amplitude": 0.1,
+    "delta": 0.05,
+    "dimension": 2,
+    "seed": 20260920,
+    "eta_start": 2.4,
+    "eta_high": 1.2,
+    "eta_middle": 0.16,
+    "eta_low": 0.008,
+    "n_time": 800,
+    "rtol": 2e-09,
+    "atol": 2e-11,
+    "max_step": 0.055
+  },
+  "geometry": {
+    "theory_reach": 2.0,
+    "theory_r_minus": 0.44326357761917723,
+    "theory_r_plus": 1.9976432397886665,
+    "theory_eta_lower": 0.11477683158440133,
+    "theory_eta_upper": 0.5172614518216215,
+    "c": 3.861960393053912,
+    "covering_radius": 0.4350871027319454,
+    "connectivity_radius": 0.4325056216017448,
+    "disjoint_radius": 0.3552759725116168,
+    "eta_hole_birth": 0.5178717015319946,
+    "eta_fragmentation": 0.11199121109052429,
+    "eta_all_disjoint": 0.09199368619901256,
+    "eta_sufficient_lower": 0.11265964910320915
+  },
+  "time_convention": {
+    "schedule": "cosine VP, noise-to-data",
+    "alpha": "sin(pi*t/2)",
+    "sigma": "cos(pi*t/2)",
+    "eta": "cot(pi*t/2)",
+    "coordinates": "U=X/alpha, signal-normalized",
+    "normalized_velocity": "pi/sin(pi*t) * (m_eta(U)-U)",
+    "initial_time": 0.2513318327560048,
+    "theory_time_interval": [
+      0.6961024100202854,
+      0.9272491514613013
+    ]
+  },
+  "snapshots": [
+    {
+      "t": 0.4422841232473911,
+      "eta": 1.2,
+      "ball_radius": 4.634352471664694,
+      "betti": [
+        1,
+        0
+      ]
+    },
+    {
+      "t": 0.8989969231019743,
+      "eta": 0.16,
+      "ball_radius": 0.6179136628886259,
+      "betti": [
+        1,
+        1
+      ]
+    },
+    {
+      "t": 0.9949071504666619,
+      "eta": 0.008,
+      "ball_radius": 0.030895683144431297,
+      "betti": [
+        16,
+        0
+      ]
+    }
+  ],
+  "numerical_audit": {
+    "solver": "DOP853 in s=log(eta_start/eta)",
+    "nfev": 1562,
+    "nfev_refinement": 3122,
+    "max_path_refinement_error": 3.2510928732834727e-09,
+    "terminal_max_refinement_error": 1.2675865140192849e-11,
+    "snapshot_indices": [
+      98,
+      381,
+      801
+    ],
+    "visible_trajectory_ids": [
+      501,
+      478,
+      394,
+      93,
+      380,
+      256,
+      505,
+      467,
+      193,
+      13,
+      63,
+      497,
+      98,
+      272,
+      199,
+      122
+    ],
+    "initial_law": "p_N convolved with N(0, eta_start^2 I_2)",
+    "cloud_sampling": "512 iid initial particles, then one deterministic ODE coupling",
+    "display_selection": "closest terminal angle to each of 16 equally spaced directions",
+    "direct_t_integration_max_error": 1.0517356820349498e-11,
+    "checked_paths": 16,
+    "current_particles_outside_frames": [
+      0,
+      0,
+      0
+    ],
+    "max_abs_current_coordinates": [
+      5.432101408594485,
+      2.426094197849058,
+      2.0124058530868156
+    ]
+  },
+  "topology_audit": {
+    "method": "exact circular-gap formula",
+    "checked_scales": 401,
+    "independent_alpha_complex_check": "passed",
+    "gudhi_version": "3.13.0",
+    "coefficient_field": 2,
+    "zero_persistence_tolerance_squared_radius": 1e-10
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "figure_01_data_sha256": "78ca47007f74612b12adace2d7b46220dbcc065c4e125a87398db668b43bc67d"
+}

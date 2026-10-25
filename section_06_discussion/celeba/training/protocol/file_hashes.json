@@ -1,0 +1,13 @@
+{
+  "code/sampling.py": "c86f825c04d45b2fddb09ca94378320569f0fc342d91950729fc18c1e00e35ac",
+  "code/core.py": "1a616c41c530bc11c05a923013d9cf41dab48de686ce7cd5729821dc2d6cbcf3",
+  "code/plot_results.py": "7fceac398fbde1c0243be9b0a16961bac1324080bc1db492b0670a83b5b9aa35",
+  "code/models.py": "7bade55e254bf06528f504777386460c89218e4c6c2ebe9ef7fc6751cc3f88ab",
+  "code/check_earlystop.py": "ce703ce4a21a0f0ddcaa96807d815c9f48e78180b640e1673f48a70a01929a94",
+  "code/run.py": "af59388421d43743943050b9db1a93a562791daf4589c74795cd098ef94a7b5c",
+  "code/launch.py": "d3a2f32d947877c4d8c16cabb2d5d426a7c89b45443668c5fe047a90a21f8b09",
+  "code/status_snapshot.py": "2e41c41a4a711f41d42dbbccb5f4c58db6ce36412cd01cd856092a67350dc4fb",
+  "code/preflight.py": "805710b9a359465b1419d33f1d414b1f86db5418c7f05f0358b271ddf7978786",
+  "code/velocity_unet.py": "79a46363c00b2f0a762b263395b4489f92542e8f9d4b50a0fd8ed371c5ec0bc3",
+  "protocol/experiment.json": "92daf14a54fe3ae5aaeee9fff915ac993a3addc75bd2b72f06815d1b55626cc0"
+}

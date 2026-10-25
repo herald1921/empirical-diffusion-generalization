@@ -1,0 +1,23 @@
+{
+  "noisy": {
+    "eta": 0.711553103866,
+    "t": 0.6062903225806355,
+    "wt": 0.010289329415552516,
+    "readout_independent_max_difference": 8.79759807339928e-15
+  },
+  "minimum": {
+    "eta": 0.427334903816,
+    "t": 0.74290322580633,
+    "wt": 0.003622369102659838,
+    "readout_independent_max_difference": 4.965068306494546e-16
+  },
+  "figure3_metric": "Tangential Euclidean W2; minimum is over the evaluated time grid, not total-W2 optimum.",
+  "normal_inset": {
+    "eta": 0.35,
+    "t": 0.7856661531201252,
+    "particles": 113,
+    "selection": "Same fixed geometric window on input, same IDs retained after Tweedie."
+  },
+  "figure5_metric": "Total Euclidean W2 before and after Tweedie, at the same stopping time, with empirical endpoint reference.",
+  "normal_display_grid": "Original audited normal grid plus the audited eta=.35 polar readout from figure05_curves.csv; no nearest-time substitution."
+}

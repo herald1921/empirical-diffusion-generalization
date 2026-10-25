@@ -1,0 +1,11 @@
+{
+  "purpose": "Test whether gap agrees with qualitative visual judgments of generalization, rather than assuming agreement",
+  "human_evaluation": "qualitative comparisons only; no human rating study or human scores claimed",
+  "metrics": "exact full-reference nearest pixel RMSE; raw/readout/clipped sensitivity; separate finite-distribution W2 gap",
+  "baseline_jobs": "N10000 primary; N98023 and N100 secondary; existing training continues",
+  "extension_allocation_rule": "N10000 MLP mean heldout clean-MSE > 1.15 times UNet and 160/320 readout max RMSE <= 0.01; these are operational allocation thresholds, not quality acceptance",
+  "extension_limit": "User revised 2026-09-22: two N10000 groups, at most 300000 total steps each (200000 baseline + at most 100000 additional); optimizer reset at 200000 declared",
+  "completed_inputs": "original partitions and 256 noise seeds frozen; source design JSON retained unchanged as historical design",
+  "paper_audit": "provisional until pending training and qualitative review complete",
+  "extension_allocation_rule_current": "See allocation_revision.json: aggregate validation ratio >1.15 OR mean of tau .8/.95 ratio >1.5, with solver check and qualitative rationale; exploratory"
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "cfm_paired_v1",
+  "n_values": [
+    1,
+    10,
+    100,
+    1000,
+    10000,
+    98023
+  ],
+  "main_n": [
+    100,
+    10000,
+    98023
+  ],
+  "methods": [
+    "unet",
+    "empirical",
+    "mlp"
+  ],
+  "groups": [
+    "s1",
+    "s2"
+  ],
+  "dimension": 6400,
+  "pca": false,
+  "path": "x_tau=(1-tau)*epsilon+tau*z; epsilon~N(0,I), tau~Uniform(0,1)",
+  "velocity_target": "z-epsilon",
+  "empirical_velocity": "(posterior_mean(x_tau,tau)-x_tau)/(1-tau)",
+  "clean_readout": "x_tau+(1-tau)*velocity(x_tau,tau)",
+  "time_convention": "tau is linear CFM time; paper cosine-VP display time t=(2/pi)*atan(tau/(1-tau)); never substitute display t for tau in readout",
+  "seed": 0,
+  "batch_size": 32,
+  "learning_rate": 0.0002,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0,
+  "ema_decay": 0.9999,
+  "gradient_clip": 1.0,
+  "precision": "bf16_autocast_training; float32_parameters_and_ema",
+  "steps": 200000,
+  "checkpoint_every": 5000,
+  "eval_every": 10000,
+  "sampler_points": 160,
+  "sampler": "Heun, shared uniform tau grid with exact inserted stopping times",
+  "tau_end": 0.999,
+  "capture_tau": [
+    0.1111111111111111,
+    0.2,
+    0.3333333333333333,
+    0.5,
+    0.8,
+    0.95,
+    0.999
+  ],
+  "samples": 256,
+  "source_seeds": "0..255, separate CPU generators; shared exactly across all methods and groups",
+  "gallery_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "reuse_candidate": "/root/shared-nvme/experiment-real-data/runs/celeba_NN_stage_S1_t_uniform/checkpoints/checkpoint_step_200000.pt",
+  "reuse_scope": "U-Net S1 N98023 only; use EMA; no warm-start of smaller N or other group",
+  "mlp": "6400-wide time-FiLM LayerNorm SiLU MLP, learned time-dependent scalar velocity skip initialized to -x; no hard low-dimensional bottleneck; parameter count not matched to U-Net",
+  "publication_gate": "fixed 200k training is a budget, not a convergence proof; assess per-time clean-readout fidelity, velocity error, activation health, fixed-source diversity and sampler refinement; checkpoint reaching budget is trained_pending_review",
+  "compatibility_note": "New runs match legacy objective/hyperparameters; exact historical GPU random stream/optimizer trajectory not claimed. One paired training seed is not architecture-level causal evidence."
+}

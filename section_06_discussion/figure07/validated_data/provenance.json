@@ -1,0 +1,10 @@
+{
+  "records": 5888,
+  "scalar_distances": 11776,
+  "maximum_distance_change": 8.326672684688674e-17,
+  "neighbor_index_changes": 0,
+  "trajectories_recomputed": false,
+  "historical_metrics_sha256": "56420d7d6df9ae15737fdcf3348a3922f51f22c2c7c2a5c5f654474997128a2b",
+  "corrected_metrics_sha256": "8662c1ebf83d7c6e1e717bea012b2881f9b7e0accfc73ffd54e723b076147bce",
+  "source_run": "/root/shared-nvme/paper_corrections_20261023"
+}

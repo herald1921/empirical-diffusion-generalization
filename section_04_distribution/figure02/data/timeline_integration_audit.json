@@ -1,0 +1,15 @@
+{
+  "signature": {
+    "source_sha256": "bfdd2f4146ab70bd6efa276e3bcb6de7435aebff8793d325cc8f0fbcf3565f2b",
+    "etas": [
+      0.427334903816,
+      0.255946349302,
+      0.125
+    ],
+    "method": "DOP853-log-noise-v1"
+  },
+  "max_refinement_error": 4.464655362101499e-11,
+  "figure_01_reference_error": 6.125373197167204e-15,
+  "particles": 512,
+  "same_initial_particles": true
+}

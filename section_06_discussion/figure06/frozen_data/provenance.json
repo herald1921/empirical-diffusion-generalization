@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/root/figure07_cfm_20260921/data/mlp/N10000/samples.npz",
+    "key": "raw_s1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      4,
+      6400
+    ]
+  },
+  {
+    "source": "/root/figure07_cfm_20260921/data/unet/N10000/samples.npz",
+    "key": "raw_s1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      4,
+      6400
+    ]
+  },
+  {
+    "source": "/root/figure07_cfm_20260921/data/mlp/N98023/samples.npz",
+    "key": "raw_s1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      4,
+      6400
+    ]
+  },
+  {
+    "source": "/root/figure07_cfm_20260921/data/unet/N98023/samples.npz",
+    "key": "raw_s1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      4,
+      6400
+    ]
+  }
+]

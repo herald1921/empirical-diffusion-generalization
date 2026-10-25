@@ -1,0 +1,7 @@
+{
+  "time": 1790049881.0105054,
+  "reason": "N10000 S1 visual readouts remain grainy despite only about 6.6 percent aggregate validation gap; late-time errors larger",
+  "rule": "aggregate clean MSE ratio >1.15 OR average of tau .8/.95 ratio >1.5; no change to reported metrics",
+  "exploratory_not_preregistered": true,
+  "preserve_original_allocation_record": true
+}

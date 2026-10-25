@@ -1,0 +1,109 @@
+{
+  "display": "Endpoint readout clipped to [0,1]; gray colormap; no contrast enhancement",
+  "group": "S1",
+  "weighting": "EMA",
+  "fixed_source_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "source_files": {
+    "200k": {
+      "path": "local-archive/samples.npz",
+      "sha256": "4f77c16d55e1174f7157cc9a0fee30403bb0978fd9e47713814876e70f16e2f9"
+    },
+    "500k": {
+      "path": "local-archive/samples.npz",
+      "sha256": "3fd7ddbcb4b4f2fc28c651ea6569b22a9abbdb4c74eee5be35edb49ad26ccc1b"
+    },
+    "final": {
+      "path": "local-archive/final_samples.npz",
+      "sha256": "1ea94f05e620a42de8f601ce8fcb825d25a50092c4da77b6d4c4243817d5d447"
+    }
+  },
+  "panels": {
+    "10000": {
+      "steps": [
+        200000,
+        500000,
+        982001
+      ],
+      "comparisons_to_final": {
+        "200k": {
+          "per_source_pixel_rms": [
+            0.038004068619872204,
+            0.07657686666527858,
+            0.04472155539568383,
+            0.12403202762171833
+          ],
+          "mean_pixel_rms": 0.07083362957563824,
+          "per_source_pixel_correlation": [
+            0.9922376361896009,
+            0.9609569393885219,
+            0.9823924965158863,
+            0.9444503738404874
+          ],
+          "mean_pixel_correlation": 0.970009361483624
+        },
+        "500k": {
+          "per_source_pixel_rms": [
+            0.037530090671284336,
+            0.04090106128980922,
+            0.04752292669581239,
+            0.15821922421805754
+          ],
+          "mean_pixel_rms": 0.07104332571874086,
+          "per_source_pixel_correlation": [
+            0.9907010405460713,
+            0.9691739833050729,
+            0.9877619735778026,
+            0.9228768508424721
+          ],
+          "mean_pixel_correlation": 0.9676284620678547
+        }
+      }
+    },
+    "98023": {
+      "steps": [
+        200000,
+        500000,
+        982582
+      ],
+      "comparisons_to_final": {
+        "200k": {
+          "per_source_pixel_rms": [
+            0.04622628648831029,
+            0.0833363637074103,
+            0.044488627018112396,
+            0.062276346396825576
+          ],
+          "mean_pixel_rms": 0.05908190590266464,
+          "per_source_pixel_correlation": [
+            0.9858569758953368,
+            0.9533277946312467,
+            0.9807238121297509,
+            0.9856394556927008
+          ],
+          "mean_pixel_correlation": 0.9763870095872588
+        },
+        "500k": {
+          "per_source_pixel_rms": [
+            0.039583968571186706,
+            0.03913857766192019,
+            0.03796186543863071,
+            0.04850633935565376
+          ],
+          "mean_pixel_rms": 0.04129768775684784,
+          "per_source_pixel_correlation": [
+            0.9882871746059062,
+            0.9785771093914534,
+            0.983931655502044,
+            0.9908434116400956
+          ],
+          "mean_pixel_correlation": 0.9854098377848748
+        }
+      }
+    }
+  }
+}

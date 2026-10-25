@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-22",
+  "platform": "Windows CPU for numerical and plotting verification; source files retrieved live from Linux experiment server",
+  "python": "3.12.4",
+  "numpy": "2.0.0",
+  "scipy": "1.14.0",
+  "matplotlib": "3.9.1",
+  "gudhi": "3.11.0",
+  "POT": "0.9.6.post1",
+  "checks": {
+    "source_parsing": "passed",
+    "synthetic_smoke": "passed: ellipse projection, circle alpha lifetime, OT self-distance and transport bounds",
+    "linear_fm_reintegration": {
+      "passed": true,
+      "paths": 16,
+      "times": 802,
+      "maximum_position_difference": 7.354331157320899e-12,
+      "threshold": 1e-06
+    },
+    "independent_four_geometry_topology": "passed, GUDHI exact alpha complexes, F_11",
+    "four_geometry_refinement": "passed: 4 supports x 16 scales x (512,1024,2048 nodes and independent 512 scramble), baseline agreement asserted within 1e-10",
+    "mnist_metric_tests": {
+      "run": 8,
+      "failures": 0,
+      "errors": 0,
+      "passed": true,
+      "original_source_file_check_requires_large_external_artifacts": true
+    },
+    "figure_entrypoints": {
+      "1": "passed, original ODE generator",
+      "2": "passed, stored OT plus matched-state integration",
+      "3": "passed, frozen curves",
+      "4": "passed, recovered renderer and original measurements",
+      "5": "passed, recovered final renderer and frozen inputs",
+      "6": "passed, reconstructed layout and original measurements",
+      "7": "passed, frozen measurements",
+      "8": "passed, 512-node computation",
+      "9": "passed, frozen measurements",
+      "10": "passed, frozen checkpoint outputs"
+    },
+    "new_plot_visual_inspection": "Figure 4 and Figure 6 PNGs inspected; readable images, axes, labels and legend",
+    "gpu_training": "not run",
+    "full_celeba_inference_and_lpips": "not run",
+    "main_circle_105_scale_ot_recomputation": "not run",
+    "live_overleaf_browser_verification": "unavailable; used local same-day source readback"
+  },
+  "restoration_notes": [
+    "Server figure5_collect_20261017.py contains null bytes; complete saved local source used instead, original preserved.",
+    "Final historical Figure 6 renderer was not recovered; original fixed-input measurements and images are used by the reconstructed renderer."
+  ]
+}

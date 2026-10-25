@@ -1,0 +1,210 @@
+{
+  "target": "(1+0.1*cos(theta))/(2*pi), radius 2",
+  "training_points": 16,
+  "coordinate": "U=X/alpha(t), cosine VP reverse time",
+  "phase_snapshots": [
+    {
+      "t": 0.4422841232473911,
+      "eta": 1.2,
+      "ball_radius": 4.634352471664694,
+      "betti": [
+        1,
+        0
+      ]
+    },
+    {
+      "t": 0.8989969231019743,
+      "eta": 0.16,
+      "ball_radius": 0.6179136628886259,
+      "betti": [
+        1,
+        1
+      ]
+    },
+    {
+      "t": 0.9949071504666619,
+      "eta": 0.008,
+      "ball_radius": 0.030895683144431297,
+      "betti": [
+        16,
+        0
+      ]
+    }
+  ],
+  "topology_recovery_time": [
+    0.6961024100202854,
+    0.9272491514613013
+  ],
+  "empirical_endpoint": 0.22706922068744215,
+  "baseline_resolution": {
+    "2048": 0.22706275416002644,
+    "4096": 0.22706792739696582,
+    "8192": 0.22706922068744215
+  },
+  "main_target_discretization_w2_bound": 0.001968098268483309,
+  "source_quadrature_error": "Sensitivity checked; no rigorous source W2 error bound claimed.",
+  "total_estimator": "Normal-cost control variate: W2_hat^2=WN_exact^2+W2_discrete^2-WN_discrete^2",
+  "tangential_estimator": "Analytic angular CDF midpoint quantiles and unregularized Euclidean OT",
+  "max_angular_cdf_mass_error": 5.6621374255882984e-14,
+  "main_grid_count": 105,
+  "checks": [
+    {
+      "level": "independent_scramble",
+      "eta": 1.2,
+      "delta_w2": -0.00014564842540543133,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.35,
+      "delta_w2": 1.205594528713716e-05,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.2,
+      "delta_w2": 0.00017132170893252585,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.16,
+      "delta_w2": -3.42896101532264e-06,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.12,
+      "delta_w2": -0.00027901162020005366,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.114776831584,
+      "delta_w2": -0.0003061223721451678,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.11,
+      "delta_w2": -0.00032754222368772123,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.105135389327,
+      "delta_w2": -0.00034589552259145506,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.08,
+      "delta_w2": -0.0003827639622606127,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.06,
+      "delta_w2": -0.0003458693549355796,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "independent_scramble",
+      "eta": 0.008,
+      "delta_w2": -5.899791744443106e-05,
+      "delta_wt": 0.0
+    },
+    {
+      "level": "refined",
+      "eta": 1.2,
+      "delta_w2": -9.84865398148127e-05,
+      "delta_wt": -6.244102457308998e-13
+    },
+    {
+      "level": "refined",
+      "eta": 0.35,
+      "delta_w2": -6.733169308242859e-05,
+      "delta_wt": 5.801952668305077e-12
+    },
+    {
+      "level": "refined",
+      "eta": 0.2,
+      "delta_w2": 0.00020750031504324085,
+      "delta_wt": -1.507823935154029e-10
+    },
+    {
+      "level": "refined",
+      "eta": 0.16,
+      "delta_w2": 0.0001576563526522745,
+      "delta_wt": -4.144837620345676e-08
+    },
+    {
+      "level": "refined",
+      "eta": 0.12,
+      "delta_w2": -0.00021625406390898827,
+      "delta_wt": -3.234288911360683e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.114776831584,
+      "delta_w2": -0.0002594852947462589,
+      "delta_wt": -4.1575700815726924e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.11,
+      "delta_w2": -0.0002944596757178952,
+      "delta_wt": -4.936554181084185e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.105135389327,
+      "delta_w2": -0.0003252277490863875,
+      "delta_wt": -5.581590896347466e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.08,
+      "delta_w2": -0.0004045952209909831,
+      "delta_wt": -6.75411606343157e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.06,
+      "delta_w2": -0.00037873477446873083,
+      "delta_wt": -6.065542898264775e-05
+    },
+    {
+      "level": "refined",
+      "eta": 0.008,
+      "delta_w2": -6.250172586355629e-05,
+      "delta_wt": -6.210540948958787e-06
+    }
+  ],
+  "max_refined_w2_change": 0.0004045952209909831,
+  "max_refined_wt_change": 6.75411606343157e-05,
+  "main_sampled_minimum": {
+    "eta": 0.11,
+    "t": 0.9302522390044717,
+    "w2": 0.1647883838925714,
+    "wt": 0.12249376515562445,
+    "wn": 0.10995820776820764,
+    "gain_fraction": 0.2742812813040809
+  },
+  "dim8_sampled_minimum": {
+    "eta": 0.030085968849,
+    "t": 0.9808524531991208,
+    "w2": 0.21349333919791602
+  },
+  "max_ot_duality_gap": 4.8808179720083444e-14,
+  "max_ot_marginal_error": 0.0,
+  "max_ot_dual_violation": 2.8409136154650128e-11,
+  "training_points_sha256": "bbecad6f152371558ad11c01af1f3f2130fc2455b2bd51a13f80b71826087d15",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "POT": "0.9.7.post1",
+    "matplotlib": "3.11.2"
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "mnist": [
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N100\\s1\\solver_refinement.json",
+      "max_individual": 9.839091035246383e-06,
+      "max_mean": 2.1224486772553064e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N100\\s2\\solver_refinement.json",
+      "max_individual": 1.6057614629971795e-05,
+      "max_mean": 2.5924441615643445e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N1000\\s1\\solver_refinement.json",
+      "max_individual": 3.547229789546691e-05,
+      "max_mean": 2.144035079254536e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N1000\\s2\\solver_refinement.json",
+      "max_individual": 0.0001462157379137352,
+      "max_mean": 6.541553375427611e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N10000\\s1\\solver_refinement.json",
+      "max_individual": 7.876847666921094e-05,
+      "max_mean": 5.3480835049413145e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\empirical\\N10000\\s2\\solver_refinement.json",
+      "max_individual": 6.456209666794166e-05,
+      "max_mean": 5.197110112931114e-06,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N100\\s1\\solver_refinement.json",
+      "max_individual": 9.542772022541612e-05,
+      "max_mean": 6.675511394860223e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N100\\s2\\solver_refinement.json",
+      "max_individual": 0.00010726883192546666,
+      "max_mean": 7.692914368817583e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N1000\\s1\\solver_refinement.json",
+      "max_individual": 3.9060298149706796e-05,
+      "max_mean": 3.279346856288612e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N1000\\s2\\solver_refinement.json",
+      "max_individual": 4.029733463539742e-05,
+      "max_mean": 3.183265289408155e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N10000\\s1\\solver_refinement.json",
+      "max_individual": 5.371816223487258e-05,
+      "max_mean": 4.690387868322432e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\mlp\\N10000\\s2\\solver_refinement.json",
+      "max_individual": 5.9774291003122926e-05,
+      "max_mean": 5.016930299461819e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N100\\s1\\solver_refinement.json",
+      "max_individual": 0.00010623915295582265,
+      "max_mean": 8.523260476067662e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N100\\s2\\solver_refinement.json",
+      "max_individual": 0.00010758904682006687,
+      "max_mean": 8.524615259375423e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N1000\\s1\\solver_refinement.json",
+      "max_individual": 0.0006303697009570897,
+      "max_mean": 9.772941848495975e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N1000\\s2\\solver_refinement.json",
+      "max_individual": 0.00032117529190145433,
+      "max_mean": 8.896504004951566e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N10000\\s1\\solver_refinement.json",
+      "max_individual": 0.0006714678602293134,
+      "max_mean": 9.980220056604594e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    },
+    {
+      "path": "JMLR_complete_20260924\\experiments\\mnist\\data\\unet\\N10000\\s2\\solver_refinement.json",
+      "max_individual": 0.00039595289854332805,
+      "max_mean": 8.930384501582012e-05,
+      "times": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.8,
+        0.95,
+        0.999
+      ],
+      "trajectories": 32
+    }
+  ],
+  "celeba_verified_four_seed": {
+    "n": 10000,
+    "group": "s1",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "comparison": "160 vs 320 base intervals, same inserted capture times",
+    "rows": [
+      {
+        "tau": 0.1111111111111111,
+        "state_rmse": [
+          3.716974788403604e-06,
+          1.7921180415214621e-06,
+          3.8058785776229342e-06,
+          6.289581051532878e-06
+        ],
+        "readout_rmse": [
+          2.1748715880676173e-05,
+          1.1260647625022102e-05,
+          2.5953006115742028e-05,
+          4.4734348193742335e-05
+        ]
+      },
+      {
+        "tau": 0.2,
+        "state_rmse": [
+          2.346586734347511e-05,
+          9.8536684163264e-06,
+          1.3887331988371443e-05,
+          1.2762093319906853e-05
+        ],
+        "readout_rmse": [
+          5.201558906264836e-06,
+          0.00021270621800795197,
+          0.00013618437515106052,
+          2.715750269999262e-05
+        ]
+      },
+      {
+        "tau": 0.3333333333333333,
+        "state_rmse": [
+          1.9760460418183357e-05,
+          0.00012960693857166916,
+          3.0167289878590964e-05,
+          1.3770352779829409e-05
+        ],
+        "readout_rmse": [
+          4.963740707353281e-08,
+          5.2233829705983226e-08,
+          5.00247985257829e-08,
+          4.776622830604538e-08
+        ]
+      },
+      {
+        "tau": 0.5,
+        "state_rmse": [
+          1.4844123143120669e-05,
+          9.720176603877917e-05,
+          2.2652307961834595e-05,
+          1.0369473784521688e-05
+        ],
+        "readout_rmse": [
+          1.9080140134519752e-08,
+          2.243018393244256e-08,
+          2.124696685257277e-08,
+          1.909033819913475e-08
+        ]
+      },
+      {
+        "tau": 0.8,
+        "state_rmse": [
+          5.956993391009746e-06,
+          3.8884136301930994e-05,
+          9.088561455428135e-06,
+          4.1877387957356405e-06
+        ],
+        "readout_rmse": [
+          1.569773289133991e-08,
+          1.542302285884034e-08,
+          1.5507870543274294e-08,
+          1.4535819659045046e-08
+        ]
+      },
+      {
+        "tau": 0.95,
+        "state_rmse": [
+          1.4983635310272803e-06,
+          9.724680239742156e-06,
+          2.279728732901276e-06,
+          1.0598159860819578e-06
+        ],
+        "readout_rmse": [
+          2.6694670918203656e-09,
+          1.8387725786439546e-09,
+          1.7827515019774864e-09,
+          2.1394146454412066e-09
+        ]
+      },
+      {
+        "tau": 0.999,
+        "state_rmse": [
+          5.4210229194495696e-08,
+          2.0001567690997035e-07,
+          6.894408954849496e-08,
+          5.184157458870686e-08
+        ],
+        "readout_rmse": [
+          0.0,
+          0.0,
+          0.0,
+          6.269579039958062e-12
+        ]
+      }
+    ]
+  }
+}

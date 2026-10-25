@@ -1,0 +1,196 @@
+{
+  "title": "MNIST: empirical concentration and learned generation",
+  "manuscript": "local-archive/Topology_and_Distributional_Generalization_in_Empirical_Diffusion_Models.pdf",
+  "manuscript_pages": [
+    41,
+    42,
+    43,
+    45,
+    46
+  ],
+  "source": "local-archive/mnist",
+  "sample_sizes": [
+    100,
+    1000,
+    10000
+  ],
+  "time_coordinate": "linear FM tau; do not use archived angular reverse_t",
+  "empirical_readout_tau": 0.25,
+  "neural_readout_tau": 0.999,
+  "snapshot_tau": [
+    0.05,
+    0.25,
+    0.5,
+    0.999
+  ],
+  "images": {
+    "panel_a": "S1, seed 0 for every N and time",
+    "panel_c": "seed 0 shared by S1/S2 and all methods",
+    "panel_c_order": [
+      "nearest S1 to S1 output",
+      "S1 output",
+      "paired S2 output",
+      "nearest S2 to its own output"
+    ],
+    "panel_e": "S1, N=10000, seeds 0,1,2,3 selected before inspection",
+    "display": "clip [0,1] only, fixed grayscale"
+  },
+  "distance": "min over N candidates of sqrt(mean_784((unclipped_clean_readout-reference_image)^2))",
+  "gap": "dref-dtrain; average directions equally within each seed before averaging seeds",
+  "bootstrap": {
+    "seed": 22092027,
+    "replicates": 2000,
+    "unit": "paired seed (retains both directions, methods and times)",
+    "bands": "pointwise percentile 95%, conditional on these fixed models and datasets",
+    "note": "Original Figure 9 used bands for gaps only; this composite also applies the same bootstrap to both distances."
+  },
+  "ess": "1/sum(w**2), normalized empirical posterior weights at raw states; median/IQR over 512 paths",
+  "training_runs_started": 0,
+  "source_precision": "Original saved measurements retained; float64 aggregation and bootstrap",
+  "archived_time_mapping": "reverse_t=(2/pi)*atan(tau/(1-tau)); only tau plotted",
+  "field_comparison": {
+    "weights": {
+      "mlp": {
+        "path": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N10000/s1/ema_100000.pt",
+        "sha256": "53487601ac02ddf01c878984d0b406624e247263eb2020666e978787e6faa978",
+        "step": 100000,
+        "weights": "ema",
+        "parameters": 4538384,
+        "signature": "74cd1b79c128836238eaaee425ab811942d8fdb0cba131790452d92b7a03033d"
+      },
+      "unet": {
+        "path": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N10000/s1/ema_100000.pt",
+        "sha256": "414e7f1f464f001ab830abe92b41b7a56384ece52c599bf90899593cd497e3fb",
+        "step": 100000,
+        "weights": "ema",
+        "parameters": 1310689,
+        "signature": "6ff2d602bced2a7bee8e23c4c3bcc65f98239a217afaa9e9b4e4add5220349cb"
+      }
+    },
+    "common_input_formula": "x_tau=(1-tau)*G+tau*Z",
+    "reference_selection": "last 32 images of the prescribed N=10000 reference prefix S2[:10000]",
+    "reference_global_indices": [
+      3327,
+      41803,
+      18793,
+      49456,
+      15111,
+      5386,
+      53485,
+      21004,
+      33943,
+      34326,
+      1501,
+      26479,
+      2329,
+      59614,
+      14992,
+      9371,
+      15328,
+      40045,
+      14216,
+      55312,
+      57849,
+      55205,
+      43728,
+      45516,
+      41384,
+      10244,
+      20753,
+      30932,
+      3996,
+      31877,
+      53391,
+      7241
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "tau": [
+      0.02,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      0.95
+    ],
+    "metric": "(1-tau)*sqrt(mean over all 32 inputs and 784 pixels of (v_A-v_B)^2)",
+    "inference": "FP32 neural inference, TF32 disabled; empirical posterior likelihoods and mean accumulated in float64, returned as FP32, as original implementation",
+    "confidence_intervals": "none, as Appendix C.6",
+    "source_code": "/root/dm_jmlr_complete_20260924/mnist/code/run_mnist.py",
+    "source_sha256": "b7fcf2805e467530e454c0adf67f0f3b3952be9565cbe5c40c940f5c31b05916",
+    "dataset_sha256": "ba891046e6505d7aadcbbe25680a0738ad16aec93bde7f9b65e87a2fc25776db",
+    "torch_version": "2.7.0a0+7c8ec84dab.nv25.03",
+    "device": "NVIDIA GeForce RTX 4090"
+  },
+  "figure": {
+    "width_inches": 20,
+    "height_inches": 12.4,
+    "png_dpi": 360,
+    "font": "Times New Roman / STIX",
+    "svg_fonts": "outlined paths for reliable portable rendering",
+    "method_colors": {
+      "empirical": "#49677C",
+      "mlp": "#087E8B",
+      "unet": "#9257A0"
+    },
+    "empirical_stop_color": "#D55E00"
+  },
+  "smoke": {
+    "passed": true,
+    "seconds": 1.3785159587860107,
+    "weights": {
+      "mlp": {
+        "path": "/root/dm_jmlr_complete_20260924/mnist/runs/mlp/N10000/s1/ema_100000.pt",
+        "sha256": "53487601ac02ddf01c878984d0b406624e247263eb2020666e978787e6faa978",
+        "step": 100000,
+        "weights": "ema",
+        "parameters": 4538384,
+        "signature": "74cd1b79c128836238eaaee425ab811942d8fdb0cba131790452d92b7a03033d"
+      },
+      "unet": {
+        "path": "/root/dm_jmlr_complete_20260924/mnist/runs/unet/N10000/s1/ema_100000.pt",
+        "sha256": "414e7f1f464f001ab830abe92b41b7a56384ece52c599bf90899593cd497e3fb",
+        "step": 100000,
+        "weights": "ema",
+        "parameters": 1310689,
+        "signature": "6ff2d602bced2a7bee8e23c4c3bcc65f98239a217afaa9e9b4e4add5220349cb"
+      }
+    },
+    "finite_fields": true,
+    "scaled_velocity_equals_clean_rmse": true
+  },
+  "evaluation_elapsed_seconds": 7.759888648986816
+}

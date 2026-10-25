@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "647d94430cc9ad513aee4392ff47c7b203a3a5e54be11c1697be605701a29e14",
+  "partitions_sha256": "f5b4a04cb2de1f31a0ebad7ea4013d569b79ec5a05807933bd6655ea8e44a84c",
+  "image_disjoint": true,
+  "identity_disjoint_verified": false,
+  "source_indices": "S1 first N; S2 last N",
+  "code_sha256": "3f05dd64359845da9646a11295bd01200f36a0fb4991120e4ecfe3fd4623b2bd"
+}

@@ -1,0 +1,122 @@
+{
+  "selection": {
+    "100": {
+      "index": 4,
+      "t": 0.055219341423447824,
+      "threshold": 0.01458277553319931,
+      "crossing_t": 0.07044657495455456,
+      "rule": "last capture before gap rises 5% of terminal-minus-early-minimum amplitude"
+    },
+    "1000": {
+      "index": 6,
+      "t": 0.07916684832113109,
+      "threshold": 0.008690503425896168,
+      "crossing_t": 0.0903344706017331,
+      "rule": "last capture before gap rises 5% of terminal-minus-early-minimum amplitude"
+    },
+    "10000": {
+      "index": 7,
+      "t": 0.0903344706017331,
+      "threshold": 0.00860974658280611,
+      "crossing_t": 0.11119977557157044,
+      "rule": "last capture before gap rises 5% of terminal-minus-early-minimum amplitude"
+    },
+    "98023": {
+      "index": 8,
+      "t": 0.11119977557157044,
+      "threshold": 0.007926209829747677,
+      "crossing_t": 0.13306813826892616,
+      "rule": "last capture before gap rises 5% of terminal-minus-early-minimum amplitude"
+    }
+  },
+  "main_common_stop": 0.11119977557157044,
+  "main_common_index": 8,
+  "terminal_reverse_t": 0.9993627431834474,
+  "primary_gap_samples_per_group": 256,
+  "ess_samples_per_group": 8,
+  "ess_primary_display": "S1 seed0; gray trajectories seeds1..7",
+  "n_values": [
+    100,
+    1000,
+    10000,
+    98023
+  ],
+  "network_weights": "200000-step EMA for all N",
+  "nearest_image_metric": "minimum pixel RMSE of unclipped readout; consistent with gap",
+  "figure1_snapshot_indices": [
+    0,
+    2,
+    5,
+    8,
+    14,
+    31
+  ],
+  "figure1_curve_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "source_seeds_four_row": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "main_earlystop_gap_at_time": {
+    "100": 0.10663643479347229,
+    "1000": 0.039766035974025726,
+    "10000": 0.01343692559748888,
+    "98023": 0.0025246557779610157
+  },
+  "sensitivity_gap": {
+    "100": 0.009931555017828941,
+    "1000": 0.006136915180832148,
+    "10000": 0.0030775554478168488,
+    "98023": 0.0025246557779610157
+  },
+  "not_claimed": [
+    "low gap implies good visual quality",
+    "gap is W2",
+    "reference-selected time is independently validated optimum",
+    "N=100000",
+    "neural ESS"
+  ],
+  "plotted_metrics": [
+    "d_train",
+    "d_reference",
+    "gap"
+  ],
+  "line_styles": {
+    "d_train": "long dashed, opaque, 1.65pt",
+    "d_reference": "short dashed, alpha 0.58, 1.25pt",
+    "gap": "solid, 1.55pt"
+  },
+  "shared_distance_ylim": [
+    0,
+    0.22
+  ],
+  "shared_gap_ylim": [
+    -0.01,
+    0.22
+  ],
+  "distance_aggregation": "256 source seeds; equal weighting S1/S2; mean curves without confidence bands",
+  "gap_uncertainty": "pointwise 95% paired-source bootstrap shading",
+  "early_stop_selection_unchanged": true
+}

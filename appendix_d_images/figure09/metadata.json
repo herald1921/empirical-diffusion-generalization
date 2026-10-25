@@ -1,0 +1,51 @@
+{
+  "title": "MNIST: empirical concentration and learned generation",
+  "manuscript": "local-archive/Topology_and_Distributional_Generalization_in_Empirical_Diffusion_Models.pdf",
+  "manuscript_pages": [
+    41,
+    42,
+    43,
+    45,
+    46
+  ],
+  "source": "local-archive/mnist",
+  "sample_sizes": [
+    100,
+    1000,
+    10000
+  ],
+  "time_coordinate": "linear FM tau; do not use archived angular reverse_t",
+  "empirical_readout_tau": 0.25,
+  "neural_readout_tau": 0.999,
+  "snapshot_tau": [
+    0.05,
+    0.25,
+    0.5,
+    0.999
+  ],
+  "images": {
+    "panel_a": "S1, seed 0 for every N and time",
+    "panel_c": "seed 0 shared by S1/S2 and all methods",
+    "panel_c_order": [
+      "nearest S1 to S1 output",
+      "S1 output",
+      "paired S2 output",
+      "nearest S2 to its own output"
+    ],
+    "panel_e": "S1, N=10000, seeds 0,1,2,3 selected before inspection",
+    "display": "clip [0,1] only, fixed grayscale"
+  },
+  "distance": "min over N candidates of sqrt(mean_784((unclipped_clean_readout-reference_image)^2))",
+  "gap": "dref-dtrain; average directions equally within each seed before averaging seeds",
+  "bootstrap": {
+    "seed": 22092027,
+    "replicates": 2000,
+    "unit": "paired seed (retains both directions, methods and times)",
+    "bands": "pointwise percentile 95%, conditional on these fixed models and datasets",
+    "note": "Original Figure 9 used bands for gaps only; this composite also applies the same bootstrap to both distances."
+  },
+  "ess": "1/sum(w**2), normalized empirical posterior weights at raw states; median/IQR over 512 paths",
+  "training_runs_started": 0,
+  "source_precision": "Original saved measurements retained; float64 aggregation and bootstrap",
+  "archived_time_mapping": "reverse_t=(2/pi)*atan(tau/(1-tau)); only tau plotted"
+}

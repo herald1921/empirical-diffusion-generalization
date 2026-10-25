@@ -1,0 +1,19 @@
+{
+  "n": 1000,
+  "methods": [
+    "empirical",
+    "unet",
+    "mlp"
+  ],
+  "groups": [
+    "s1",
+    "s2"
+  ],
+  "samples_per_group": 256,
+  "timepoints": 32,
+  "network_steps": 200000,
+  "primary_output": "unclipped one-step readout",
+  "requested_maximum_N": 100000,
+  "actual_maximum_N": 98023,
+  "base_protocol_sha256": "8f98825e3a5db9e2f9242366b97275d6fc66ebaf6a452cd7f8729e687ed322d6"
+}

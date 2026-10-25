@@ -1,0 +1,17 @@
+{
+  "time": 1790051109.1952958,
+  "request": "MLP maximum 300000 total updates",
+  "old_pid": 64078,
+  "old_observed_status": {
+    "state": "training_extension",
+    "group": "s1",
+    "step": 228000,
+    "max_steps": 400000,
+    "optimizer_reset": true,
+    "pid": 64078,
+    "seconds": 1203.7421970367432
+  },
+  "resume_step": 225000,
+  "preserves_model_ema_optimizer_rng": true,
+  "reason": "Running Python code must reload changed upper bound; other training processes untouched"
+}

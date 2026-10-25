@@ -1,0 +1,89 @@
+{
+  "signature": "03532a5d474c49f9d0deba4286d513e0d43fa72386d4d718635c7dd4508dec88",
+  "kind": "unet",
+  "group": "s2",
+  "n": 100,
+  "parameters": 7659264,
+  "config": {
+    "schema": "celeba_three_method_comparison_v1",
+    "paper_commit": "37617228bea21e0794cfae98f1a10a81a5ada809",
+    "scope": "Controlled reimplementation on the project's exact S1/S2 split; not a claim of byte-identical original-paper training",
+    "n_values": [
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      98023
+    ],
+    "priority_n": [
+      100,
+      10000,
+      98023,
+      1,
+      10,
+      1000
+    ],
+    "main_n": [
+      100,
+      10000,
+      98023
+    ],
+    "methods": [
+      "unet",
+      "empirical",
+      "mlp"
+    ],
+    "groups": [
+      "s1",
+      "s2"
+    ],
+    "dimension": 6400,
+    "pca": false,
+    "training_seed": 0,
+    "training_stream_seed": 20260921,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "minimum_steps": 50000,
+    "small_n_minimum_steps": 10000,
+    "maximum_steps": 200000,
+    "check_every": 5000,
+    "noise_sigma": "sigma = U(0,1)^2; matches author's quadratic-noise distribution",
+    "training_objective": "blind Gaussian denoising; pixel mean squared noise-prediction error",
+    "train_selection": "fresh-noise train-set validation only; other-set error is diagnostic and never selects checkpoints",
+    "convergence": "after minimum steps: three evaluation intervals with relative range < 0.01, learning rate <= 6.25e-5, mean train validation MSE < 0.04; otherwise maximum-step runs are needs_review, not converged",
+    "samples": 256,
+    "source_seeds": "0..255, independently seeded CPU Gaussian generators, saved once and shared exactly",
+    "gallery_seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "sigma_max": 1.0,
+    "sigma_min": 0.01,
+    "capture_sigmas": [
+      1.0,
+      0.5,
+      0.2,
+      0.1,
+      0.03,
+      0.01
+    ],
+    "sampler_base_points": 160,
+    "sampler": "shared VE Heun schedule, rho=7; output is each method's own clean-data readout at the final state",
+    "empirical_definition": "exact sigma-conditional empirical denoiser; this differs from the sigma-marginal blind-training Bayes estimator",
+    "metric": "centered cosine for both paired outputs and closest original references; fixed [0,1] clipping with clipping fraction retained",
+    "deviations_from_original": [
+      "project split Nmax=98023 instead of author's checkpoint Nmax=99325",
+      "batch32 and adaptive convergence schedule instead of author's batch512/epoch schedule",
+      "common explicit-sigma probability-flow ODE instead of author's residual-controlled sampling",
+      "primary MLP has 6400-wide layers and is not parameter-count matched to UNet",
+      "one paired training seed in primary sweep; training-seed replication is needed before causal architecture claims",
+      "common prior mean fixed at gray midpoint 0.5; finite-noise prior approximation is explicit"
+    ],
+    "publication_gate": "all main-N model pairs pass convergence and sampling checks; fixed galleries still require visual quality review; do not interpret a failed MLP as evidence of an intrinsic architecture limit",
+    "initial_mean": 0.5,
+    "initialization": "one shared y_T=0.5+sigma_max*epsilon; center is fixed intensity midpoint, not fitted on either set"
+  }
+}

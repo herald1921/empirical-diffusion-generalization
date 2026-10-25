@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "ellipse_residual": 7.993605777301127e-15,
+  "ellipse_dense_max_error": 2.402856580374646e-09,
+  "circle_alpha_h1": [
+    0.390180644032257,
+    2.0
+  ],
+  "ot_self": 0.0,
+  "transport_bounds": true,
+  "seconds_one_scale": 1.1307401657104492
+}

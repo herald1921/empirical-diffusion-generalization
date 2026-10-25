@@ -1,0 +1,6 @@
+{
+  "source": "local-archive/figure_01_data.npz",
+  "sha256": "78ca47007f74612b12adace2d7b46220dbcc065c4e125a87398db668b43bc67d",
+  "initial_particles": 512,
+  "purpose": "Exact same initial particles and deterministic probability-flow coupling as Figure 1"
+}
