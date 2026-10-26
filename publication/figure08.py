@@ -11,7 +11,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-from matplotlib.patches import FancyArrowPatch
 ROOT=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,required=True);ap.add_argument('--output',type=Path,default=ROOT/'publication/output');a=ap.parse_args();O=a.output;O.mkdir(exist_ok=True,parents=True)
 path=ROOT/'appendix_c_geometries/figure8_appendixC_20261019/generate_figure8.py'
@@ -20,8 +19,6 @@ records=json.loads((path.parent/'output/figure8_audit.json').read_text())['suppo
 plt.rcParams.update({'font.family':'STIXGeneral','mathtext.fontset':'stix','font.size':9.2,'axes.labelsize':9.2,'xtick.labelsize':9.2,'ytick.labelsize':9.2,'legend.fontsize':9.2,'pdf.fonttype':42})
 W,H=440,366;fig=plt.figure(figsize=(W/72,H/72));centers=[80,144,205,264];rowcenters=[84,158,232,306]
 def txt(x,y,s,**kw):return fig.text(x/W,1-y/H,s,fontsize=9.2,va='center',**kw)
-txt(W/2,10,r'Generation direction: normalized noise $\eta$ decreases',ha='center')
-fig.add_artist(FancyArrowPatch((76/W,1-23/H),(310/W,1-23/H),transform=fig.transFigure,arrowstyle='-|>',mutation_scale=8,lw=.7,color='#71869A'))
 for x,lab in zip([70,143,204,268],['Support + observations','High noise','Intermediate noise','Low noise']):txt(x,39,lab,ha='center',weight='bold',linespacing=1.05)
 txt(365,39,'Distributional accuracy',ha='center',weight='bold')
 for i,(shape,cy) in enumerate(zip(['ellipse','sphere','segment','eight'],rowcenters)):
@@ -59,5 +56,6 @@ for i,cy in enumerate(rowcenters):
   # Each original geometry panel is scaled uniformly, then aligned with its header.
   rect=fitz.Rect(centers[j]-30,cy-20.25,centers[j]+30,cy+20.25)
   page.show_pdf_page(rect,original,0,clip=clip,keep_proportion=True,overlay=False)
+page.set_cropbox(fitz.Rect(0,28,W,H))  # Remove the now-empty top annotation strip.
 out=O/'figure_08_synthetic_geometries.pdf';doc.save(out,deflate=True);page.get_pixmap(matrix=fitz.Matrix(2,2)).save(out.with_suffix('.png'))
 (O/'figure08_layout_audit.json').write_text(json.dumps({'layout':'original four-row five-column layout; row names on left; noise labels below geometry; single-line column headers; larger geometry panels; reduced row spacing; shared legend beside the common bottom noise-axis label','geometry_source_sha256':hashlib.sha256(a.input.read_bytes()).hexdigest(),'curve_records_sha256':hashlib.sha256((path.parent/'output/figure8_audit.json').read_bytes()).hexdigest(),'noise_stages':{k:v['stages_eta'] for k,v in records.items()},'new_simulation':False},indent=2))

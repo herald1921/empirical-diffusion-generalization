@@ -554,14 +554,14 @@
   },
   {
     "path": "publication/README.md",
-    "sha256": "41883cc11db1bb9bcac1564ab72f28f3f129ef366db217cab2acddcd79eed12c",
-    "bytes": 2705,
+    "sha256": "dcbb4cf050790ab42ffb55c2757f68a613baad055e14adfb53cee18734ca3092",
+    "bytes": 2842,
     "modified": true
   },
   {
     "path": "publication/figure08.py",
-    "sha256": "39409d84153704d170de3dbe715d5d2d2dcd906a18c8856361f0a3e6119c7cf0",
-    "bytes": 5462,
+    "sha256": "4c1489ccbb06702d9b3dc9b3e87148d2815b3c37b8f64e3d3db88733562e85f4",
+    "bytes": 5270,
     "modified": true
   },
   {
@@ -600,8 +600,8 @@
   },
   {
     "path": "publication/reviewed_figures_20261026.json",
-    "sha256": "331995b486595370779534a6c383ccff46e154d7fe37b895758202f2b9dd3f66",
-    "bytes": 1768,
+    "sha256": "ce678245f7824de748846f465b49b674a22e117f96dae57f0a25c831c44bd127",
+    "bytes": 1848,
     "original_sha256": null,
     "modified": true
   },

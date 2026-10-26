@@ -21,7 +21,9 @@ The first command preserves the vector plots and embedded image streams in
 Figures 1-7 and 10. Figure 8 preserves the four geometry rows and redraws the
 right-hand curves from archived records. Its enlarged geometry panels, wider
 curve panels, shared bottom legend, and shared noise-axis label were reviewed
-by the authors. Figure 10 includes both `main` and `final` annotations.
+by the authors. The redundant top generation-direction label and arrow were
+subsequently removed from Figure 8; its bottom noise-axis label is retained.
+Figure 10 includes both `main` and `final` annotations.
 
 Ordinary text in Figures 1-7 and 10 is 9.2 pt at a 6-inch placement width.
 Figure 8 is exported at 440 pt width with 9.2 pt ordinary labels (about 9.03 pt
