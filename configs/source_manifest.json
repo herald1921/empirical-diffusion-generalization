@@ -526,6 +526,12 @@
     "modified": false
   },
   {
+    "path": "configs/public_export.json",
+    "sha256": "15477e24b350ef58c08d78a685cbd2c73d68a3af04293919b21ec4441677c5d2",
+    "bytes": 28492,
+    "modified": false
+  },
+  {
     "path": "configs/validation_summary.json",
     "sha256": "7c356e60cbca8d618362726e17d238883e4576684b7262f26b8f40aa30e1bc67",
     "bytes": 2277,
@@ -545,6 +551,59 @@
     "bytes": 4036,
     "original_sha256": "1c9808916a9955827900f6d348cde8ba67814594e923f7808b38165203071a8c",
     "modified": false
+  },
+  {
+    "path": "publication/README.md",
+    "sha256": "41883cc11db1bb9bcac1564ab72f28f3f129ef366db217cab2acddcd79eed12c",
+    "bytes": 2705,
+    "modified": true
+  },
+  {
+    "path": "publication/figure08.py",
+    "sha256": "39409d84153704d170de3dbe715d5d2d2dcd906a18c8856361f0a3e6119c7cf0",
+    "bytes": 5462,
+    "modified": true
+  },
+  {
+    "path": "publication/figure09.py",
+    "sha256": "b0568b673c2df101d4e7cd7f5ab461953f4d295629bf0d0da737d8d35d297ea5",
+    "bytes": 7602,
+    "modified": true
+  },
+  {
+    "path": "publication/figure09_caption.tex",
+    "origin": "approved Figure 9 update on 2026-10-26",
+    "original_sha256": null,
+    "modified": true,
+    "sha256": "9820a9c0d5b4f2c4e93aa516a0b8d8a5e98d1c9c99f71c5e097730c9082f0ad1",
+    "bytes": 863
+  },
+  {
+    "path": "publication/figure09_revision_20261026.json",
+    "origin": "approved Figure 9 update on 2026-10-26",
+    "original_sha256": null,
+    "modified": true,
+    "sha256": "b2cb4e6ce2a1bfdfcf74b774352cea585635222e350fc7b00d7bf1eed8ad271e",
+    "bytes": 691
+  },
+  {
+    "path": "publication/requirements.txt",
+    "sha256": "2c4ada19693171e883e8dd3aea748d47cc81aad581866eb0cfb4d36afca43281",
+    "bytes": 92,
+    "modified": false
+  },
+  {
+    "path": "publication/resize_figure_labels.py",
+    "sha256": "c9b944bdd82a66369e48fbd2529778b4b10d607773fd50e9b63b59aa912cd6d1",
+    "bytes": 13228,
+    "modified": true
+  },
+  {
+    "path": "publication/reviewed_figures_20261026.json",
+    "sha256": "331995b486595370779534a6c383ccff46e154d7fe37b895758202f2b9dd3f66",
+    "bytes": 1768,
+    "original_sha256": null,
+    "modified": true
   },
   {
     "path": "requirements-gpu.txt",
@@ -2114,47 +2173,6 @@
     "sha256": "2fe3c8800fcebe35bac94b81abefc271c8850eac9d84e98b4e02bdb15f2fb843",
     "bytes": 2440,
     "original_sha256": "4c82bb896f50221e5cc28845b7a85799f2d575b31681805d20a42c333fc5abb5",
-    "modified": true
-  },
-  {
-    "path": "configs/public_export.json",
-    "sha256": "15477e24b350ef58c08d78a685cbd2c73d68a3af04293919b21ec4441677c5d2",
-    "bytes": 28492
-  },
-  {
-    "path": "publication/README.md",
-    "sha256": "a0babafead7d1caac90b12890079006f593d9773cff1301a1376429bc2335209",
-    "bytes": 2278,
-    "modified": true
-  },
-  {
-    "path": "publication/figure08.py",
-    "sha256": "39409d84153704d170de3dbe715d5d2d2dcd906a18c8856361f0a3e6119c7cf0",
-    "bytes": 5462,
-    "modified": true
-  },
-  {
-    "path": "publication/figure09.py",
-    "sha256": "c8c4e118a121e26c6a15a0c19e751b5070b1289f78086159527ef9d59f4325e1",
-    "bytes": 1310,
-    "modified": true
-  },
-  {
-    "path": "publication/requirements.txt",
-    "sha256": "2c4ada19693171e883e8dd3aea748d47cc81aad581866eb0cfb4d36afca43281",
-    "bytes": 92
-  },
-  {
-    "path": "publication/resize_figure_labels.py",
-    "sha256": "c9b944bdd82a66369e48fbd2529778b4b10d607773fd50e9b63b59aa912cd6d1",
-    "bytes": 13228,
-    "modified": true
-  },
-  {
-    "path": "publication/reviewed_figures_20261026.json",
-    "sha256": "1a6cf31adb5be4edc5ed39c6b4aac23418a29cd8ab4b2f390150a02e0ba873ea",
-    "bytes": 1697,
-    "original_sha256": null,
     "modified": true
   }
 ]

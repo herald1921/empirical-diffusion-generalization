@@ -1,0 +1,25 @@
+{
+  "approved_pdf_sha256": "e2fa27fd80fb49536a103664d4dc5ba55356e0224649ed0615afacb429a7d693",
+  "regions": {
+    "a": "original c,d",
+    "b": "original a,b",
+    "c": "original e,f"
+  },
+  "ordinary_font_pt": 9.2,
+  "canvas_pt": [
+    432,
+    259
+  ],
+  "input_sha256": "0a22734ea325d711464db0140f92e451a092207dcc397672eef97d11019a934c",
+  "field_csv_sha256": "93fcfc571383d26bbd7beaf6f9278b634237022a3f6f010b8dff0e9a324f0ce8",
+  "validation": {
+    "image_array_hashes": true,
+    "curves": true,
+    "input_sha256": true,
+    "field_csv_sha256": true
+  },
+  "image_count": 56,
+  "curve_count": 33,
+  "new_training": false,
+  "new_numerical_evaluation": false
+}

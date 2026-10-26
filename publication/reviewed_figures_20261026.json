@@ -42,8 +42,10 @@
   {
     "number": 9,
     "file": "figure_09_mnist_comparison.pdf",
-    "sha256": "47b90913990b50606283455a8a54051bd8a14b94a403493590c2c82a7785f916",
-    "status": "original retained by user"
+    "sha256": "e2fa27fd80fb49536a103664d4dc5ba55356e0224649ed0615afacb429a7d693",
+    "status": "author-approved three-region layout v4",
+    "font": "STIXGeneral",
+    "ordinary_font_pt": 9.2
   },
   {
     "number": 10,
