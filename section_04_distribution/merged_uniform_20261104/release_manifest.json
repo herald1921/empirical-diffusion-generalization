@@ -1,0 +1,197 @@
+{
+  "version": "uniform_circle_20261104_compact_late_B",
+  "figure_inches": [
+    6,
+    5.2
+  ],
+  "ordinary_font_pt": 9.2,
+  "B_eta_over_R": 0.02,
+  "right_dimensions": [
+    4,
+    8,
+    16
+  ],
+  "provenance": {
+    "repository": "https://github.com/herald1921/empirical-diffusion-generalization",
+    "commit": "5626f1c59d9a9f4951231699ec517afb67779341"
+  },
+  "redraw_command": "python plot_uniform_dimensions.py --final",
+  "cached_redraw_runtime_file_count": 10,
+  "full_release_file_count": 29,
+  "files": [
+    {
+      "path": "compute_uniform.py",
+      "role": "cached_redraw_runtime",
+      "bytes": 8761,
+      "sha256": "ee8a8ca964676bb3371894703a77cf577cdc8aaa5e059f5827e2b47e901220bf"
+    },
+    {
+      "path": "plot_uniform_dimensions.py",
+      "role": "cached_redraw_runtime",
+      "bytes": 15023,
+      "sha256": "eb1474edaecc567c683b77a5a6b33a280c255ca36dea3c86bd7fa12a6acc5042"
+    },
+    {
+      "path": "curves_dense.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 28100,
+      "sha256": "517d9e59d0ce967504a6b0a6da3b17b98b64f99c17ea43ea4ee3ac7ba27a6d6b"
+    },
+    {
+      "path": "dimension_checks.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 10430,
+      "sha256": "11616e83cb05f3f2c4ba302c371c4a5006571f100e73db55d07e925717143f1f"
+    },
+    {
+      "path": "minimum_search.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 4123,
+      "sha256": "4a4438a243f0433d2f483e17e87dab6a37df754b0085c82a4c9e9df36f432358"
+    },
+    {
+      "path": "fine_checks.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 1952,
+      "sha256": "bcb6e98cf9cb9b643ff601c4792d1940a2f04a9b83642f36af8183a2ea64825d"
+    },
+    {
+      "path": "late_stop_checks.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 750,
+      "sha256": "d8c5539ce74f32ee8eca35675570668da94e2097b3d7081e51c0f6e58038dbe4"
+    },
+    {
+      "path": "late_b_candidates.csv",
+      "role": "cached_redraw_runtime",
+      "bytes": 2181,
+      "sha256": "8d8f70e146ffd4fe63db982ec6ae2174a9cab76b3211580b177380dcda9b7d19"
+    },
+    {
+      "path": "snapshot_data.npz",
+      "role": "cached_redraw_runtime",
+      "bytes": 47062,
+      "sha256": "91058825699831186076c454311876372348277642611cd0d1e23ac5f84c6056"
+    },
+    {
+      "path": "protocol_dimensions.txt",
+      "role": "cached_redraw_runtime",
+      "bytes": 5860,
+      "sha256": "9c21e8f9895b1a985da7932dde2ab9fee989a20186e110c971b2be6eb4feb3a0"
+    },
+    {
+      "path": "prepare_uniform_snapshots.py",
+      "role": "numerical_regeneration",
+      "bytes": 590,
+      "sha256": "222e75d767879f8eba95b5d65971a8dd64883e861550c3e021a9836be2fc4ecc"
+    },
+    {
+      "path": "run_refine.py",
+      "role": "numerical_regeneration",
+      "bytes": 304,
+      "sha256": "3595904b6e4da6dca7c510f69e22e4b4c792ff8f7f8b320be26d89d6b1f69384"
+    },
+    {
+      "path": "run_dimension_checks.py",
+      "role": "numerical_regeneration",
+      "bytes": 489,
+      "sha256": "383ad9a582b7a6516e8275f8519d9b67864a8f0a2492511d48b2ea8bfdf7bd5c"
+    },
+    {
+      "path": "research_b_selection.py",
+      "role": "numerical_regeneration",
+      "bytes": 1390,
+      "sha256": "97aab8cc94441da0ad0ae2fbccf779d324aac834565ae2679e95dfc584d7e956"
+    },
+    {
+      "path": "verify_final.py",
+      "role": "numerical_regeneration",
+      "bytes": 2424,
+      "sha256": "ab2cd9446b90c6fd3b2fc1f420a0eb3eb8e99d248ed34d34cb24bcc73ea8b0cb"
+    },
+    {
+      "path": "requirements_uniform.txt",
+      "role": "release_instructions",
+      "bytes": 62,
+      "sha256": "ad2d43de2ef6eeb3adce189d22b93533f5bb1ffd1f7a4f100302efa2b1a658ea"
+    },
+    {
+      "path": "REPRODUCE_UNIFORM.txt",
+      "role": "release_instructions",
+      "bytes": 3609,
+      "sha256": "17f5cbbdd0ff09a56ab5dbcb7d35efd429bd7869d9d1d80a4f5cbe6ca998d36f"
+    },
+    {
+      "path": "make_release_manifest.py",
+      "role": "release_instructions",
+      "bytes": 1972,
+      "sha256": "3773b9d6814eb4cddc746f4a390ae4adc78f2c745650a98d115c02b186dd4cb5"
+    },
+    {
+      "path": "B_selection_report.txt",
+      "role": "release_instructions",
+      "bytes": 5084,
+      "sha256": "54ecb0d0ccddfc51abb73b00ee3c7bf12d9b5180c7f1f3446383e2bf1a04d337"
+    },
+    {
+      "path": "protocol.txt",
+      "role": "release_instructions",
+      "bytes": 5860,
+      "sha256": "9c21e8f9895b1a985da7932dde2ab9fee989a20186e110c971b2be6eb4feb3a0"
+    },
+    {
+      "path": "figure_audit.json",
+      "role": "evidence",
+      "bytes": 14388,
+      "sha256": "1ee5f53de647a74b86522e17a69717bd826e76d4720e5fe34bf84b97e6359dd3"
+    },
+    {
+      "path": "dimension_comparison_audit.json",
+      "role": "evidence",
+      "bytes": 6865,
+      "sha256": "6bb4c2040513099b87aa92dac92017d2932cfe24b9ecf3cbd9cc42b1ec29875b"
+    },
+    {
+      "path": "verification.json",
+      "role": "evidence",
+      "bytes": 3376,
+      "sha256": "f6efc1f21e1e1f05552eb706bdc1f13cf6555d0cf913d61753434cdd56214181"
+    },
+    {
+      "path": "symmetry_ot_check.json",
+      "role": "evidence",
+      "bytes": 1292,
+      "sha256": "d78eb1c59ec9b37ae33ce4f23b23ca36f644fc9b30e6e80d82a9c8ae9adea952"
+    },
+    {
+      "path": "dimension_curves.csv",
+      "role": "evidence",
+      "bytes": 69146,
+      "sha256": "2875c7aea6c83d377db906a67721d33cc8c198df92043eeb0ad3f1c838bbbef1"
+    },
+    {
+      "path": "late_b_selection_audit.json",
+      "role": "evidence",
+      "bytes": 3706,
+      "sha256": "99679037dca4f1cf2fc35f200079ae3127e542c5648ff80277351e55289d4d0c"
+    },
+    {
+      "path": "figure_02_stopping_denoising_uniform.pdf",
+      "role": "publication_outputs",
+      "bytes": 61895,
+      "sha256": "7743e7c22f45af3fe873b1b7365e34df8f5e80654197163cef2905f808472217"
+    },
+    {
+      "path": "figure_02_stopping_denoising_uniform.png",
+      "role": "publication_outputs",
+      "bytes": 301540,
+      "sha256": "7d285671001d39ce3b161aa5d6f4a34fd7668f460f2562664b96f9e60fa7a959"
+    },
+    {
+      "path": "figure_02_stopping_denoising_uniform.svg",
+      "role": "publication_outputs",
+      "bytes": 339193,
+      "sha256": "1d731ba9a36806c388ebd3017011374656c63c51c2df39dd4114b5e3d678ebae"
+    }
+  ]
+}

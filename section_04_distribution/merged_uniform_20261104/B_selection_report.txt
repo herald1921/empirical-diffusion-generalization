@@ -1,0 +1,82 @@
+B READOUT: SOURCE AUDIT AND UNIFORM-CIRCLE CANDIDATES
+
+1. WHAT THE ORIGINAL RELEASE ACTUALLY DOES
+The upstream release does not select B through ESS, a topology threshold,
+late-collapse detection, or an optimization rule in the checked plotting and
+numerics code. It uses the manually specified eta=0.16:
+- upstream_repo/section_05_early_stopping/numerics/numerics/make_figures_04_05.py:37
+  SELECT=.16
+- upstream_repo/section_05_early_stopping/figure03/make_figure.py:63
+  readouts = {key: exact_row(eta) for key, eta in [('A', .35), ('B', .16)]}
+- The same file, lines 67-69, asserts that Tweedie improves A, worsens B, and
+  both denoised readouts remain below the empirical benchmark.
+- upstream_repo/section_05_early_stopping/numerics/make_figures.py:108 calls B
+  'Later stop: harms'. This is the strongest direct evidence for its intended
+  role in the original figure.
+- upstream_repo/section_05_early_stopping/numerics/prepare_insets.py:14 does
+  minimize raw_wt, but only to choose the separate Tangential minimum inset.
+  It is not the B selection rule.
+
+The original target is slightly nonuniform. Reusing eta/R=.08 for the uniform
+target preserves a number, not an independently justified selection rule.
+For the current target it still lies in the circle-topology interval with G=0.
+
+2. NEW CANDIDATES, ALL N=16, R=2, UNIFORM TARGET
+All errors below are divided by the same S_N=0.22650649184152313. Each candidate
+was recomputed with 16,384 Gaussian quadrature nodes per symmetry orbit and
+8,192 target nodes. The supporting files are late_b_candidates.csv and
+late_b_selection_audit.json.
+
+eta/R   eta    raw W2    WT        WN        G         denoised W2   topology
+0.0800  0.160  0.784581  0.343495  0.705811  0.000000  0.934614      circle
+0.0550  0.110  0.722241  0.535819  0.485453  0.000000  0.998223      circle
+0.0400  0.080  0.747352  0.659656  0.353120  0.096381  approximately1 16 components
+0.0200  0.040  0.846695  0.828702  0.176587  0.472305  approximately1 16 components
+0.0125  0.025  0.899132  0.892750  0.110370  0.655052  approximately1 16 components
+0.0080  0.016  0.933694  0.931296  0.070638  0.773700  approximately1 16 components
+0.0040  0.008  0.966124  0.965622  0.035319  0.884464  approximately1 16 components
+
+All later candidates keep the original qualitative relation: same-time
+Tweedie raises total error. At very small noise the finite precision denoised
+law agrees with the empirical law on sampled quadrature nodes. The reported
+discrete value approximately0.9999981 is the finite target-discretization bias
+(about1.9e-6 relative), not evidence of a strict gain over S_N. Thus the
+original auxiliary assertion denoised W2<S_N cannot simply be inherited when
+B is moved to the near-empirical regime.
+
+3. RECOMMENDATION, EXPLICITLY A NEW CHOICE
+If B is meant to show a visibly later, fragmented regime while retaining the
+original 'later stop: harms' meaning, eta/R=.02 (eta=.04) is a useful choice:
+there are 16 disconnected sample neighborhoods, G is about0.4723 S_N, and
+denoising increases total error by about0.1533 S_N. It avoids placing B almost
+on the eta=0 endpoint, where labels overlap and the raw/denoised contrast is
+small. It is a transparent representative scale, not the original algorithm.
+
+If a rule-based choice is desired, the explicitly new criterion G(r_B)=S_N/2
+has the unique solution eta_B/R=0.01880935924777692 (eta_B=0.03761871849555384).
+This guarantees a definite geometric diversity deficit and a fragmented
+neighborhood. Its exact transport readout has not yet been run; the nearby
+eta=.04 result above is verified. Do not present this criterion as historical.
+
+If instead B must preserve only the original comparison and also have a
+numerically resolved denoised W2<S_N, eta/R=.055 is the verified alternative.
+It remains topologically correct with G=0, so it cannot illustrate topology
+fragmentation. Selecting the maximizer of denoised-minus-raw error would also
+be a new optimization rule, absent from the original release.
+
+4. COMPACTNESS WITHOUT SHRINKING FONT
+The current figure is6x5.8in. A plausible compact revision is6x5.5in: reduce
+the three gaps between the four right-side panels by0.10in while preserving
+their actual heights, and reduce the left main-plot height from2.13 to1.83in.
+Keep the9.2pt fonts, 6in width, top single-row legend, current abc arrangement,
+colors, and all plot domains. This can save0.30in vertically without deleting
+content or scaling down labels. It would still need PDF rendering and checks.
+
+No manuscript, browser, GitHub repository, or current figure has been modified
+as part of this B-selection research. All original artifacts are preserved.
+
+IMPLEMENTED AFTER REVIEW
+The selected B is now eta/R=.02 (eta=.04), with a fragmented neighborhood.
+The canonical figure has been regenerated at 6 x 5.2 inches with 9.2 pt STIX
+labels and three right-side panels D=4,8,16. Earlier figure and code versions
+remain backed up. See protocol.txt and release_manifest.json for delivery.

@@ -1,0 +1,70 @@
+UNIFORM-CIRCLE FIGURE, COMPACT SMALL-MULTIPLE VERSION
+
+Current configuration: N=16 equally spaced sites, R=2, uniform circle target.
+A: eta/R=.175. B: eta/R=.02, a late fragmented scale where empirical Tweedie
+raises total error. Ambient D=2,4,8,16 is obtained by exact orthogonal padding.
+Original source provenance: herald1921/empirical-diffusion-generalization,
+commit 5626f1c59d9a9f4951231699ec517afb67779341. Code is adapted locally; the
+full upstream checkout is not a runtime dependency of this version.
+
+ENVIRONMENT
+Tested Python 3.9.19, numpy 2.0.2, scipy 1.13.1, matplotlib 3.9.1, POT 0.9.6.post1.
+Install requirements_uniform.txt in the intended Python environment. Plotting
+uses STIX fonts distributed with Matplotlib, so no Windows font dependency is
+needed. Optional PDF visual QA uses Poppler pdftoppm and pdfinfo.
+
+MINIMUM CACHED REDRAW (10 runtime files, plus requirements)
+Keep these files together in the versioned figure directory:
+  compute_uniform.py
+  plot_uniform_dimensions.py
+  curves_dense.csv
+  dimension_checks.csv
+  minimum_search.csv
+  fine_checks.csv
+  late_stop_checks.csv
+  late_b_candidates.csv
+  snapshot_data.npz
+  protocol_dimensions.txt
+Run: python plot_uniform_dimensions.py --final
+The figure script uses the cached numerical rows and does not solve OT again.
+It creates canonical PDF/PNG/SVG, figure_audit.json, dimension_comparison_audit.json,
+dimension_curves.csv, and protocol.txt. Existing canonical outputs are preserved
+as *_v4 if those backup names do not already exist. Plotting also writes the
+same figure under figure_02_uniform_dimension_small_multiples.*.
+
+RECOMPUTE NUMERICS FROM SCRATCH
+Also include prepare_uniform_snapshots.py, run_refine.py,
+run_dimension_checks.py, research_b_selection.py, and verify_final.py.
+In an otherwise fresh output folder containing the scripts/protocol, run:
+  python prepare_uniform_snapshots.py
+  python compute_uniform.py --dense
+  python run_refine.py
+  python run_dimension_checks.py
+  python research_b_selection.py
+  python compute_uniform.py --verify-symmetry
+  python plot_uniform_dimensions.py --final
+  python verify_final.py
+Each numerical driver caches completed rows; use a new directory to force a
+full independent recomputation instead of deleting existing artifacts.
+The numerical computation reduces discrete Euclidean OT by exact N-fold
+symmetry, rather than using entropy regularization. Quadrature sensitivity is
+checked, but no rigorous source quadrature bound is asserted.
+
+RECOMMENDED EVIDENCE TO PUBLISH WITH THE VERSION
+Include figure_audit.json, dimension_comparison_audit.json, verification.json,
+symmetry_ot_check.json, dimension_curves.csv, late_b_selection_audit.json,
+B_selection_report.txt, protocol.txt, and the final PDF/PNG/SVG. The generated
+release_manifest.json gives exact hashes and roles for these files and every
+runtime dependency, so the parent repository can copy a versioned directory
+without the old exploratory plots or the full upstream checkout.
+
+INTERPRETATION
+B's denoised W2 is approximately S_N. The value 0.9999981 in finite target
+quadrature is not evidence of a strict improvement over S_N. The topology
+shading belongs to sample neighborhoods U_{c_D eta}, not to the support of the
+untruncated Gaussian law. G(r) is shown only for r<R. The right plots have
+different explicitly ticked y ranges, with a common eta/R range 0.4 to 0.
+The final figure is 6 x 5.2 inches, with STIX ordinary text at 9.2 pt. D=2
+appears in the main panel, while the right column contains D=4,8,16 only.
+
+No original manuscript, old figure, or GitHub source is deleted by this workflow.

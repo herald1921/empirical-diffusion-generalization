@@ -1,0 +1,503 @@
+{
+  "N": 16,
+  "R": 2.0,
+  "target": "Uniform probability on the radius-2 circle",
+  "training": "16 equally spaced sites with equal empirical mass",
+  "SN": 0.22650649184152313,
+  "eta_grid": [
+    0.0,
+    0.0125,
+    0.025,
+    0.0375,
+    0.05,
+    0.0625,
+    0.075,
+    0.0875,
+    0.09,
+    0.092,
+    0.094,
+    0.096,
+    0.098,
+    0.1,
+    0.102,
+    0.104,
+    0.106,
+    0.108,
+    0.1085,
+    0.109,
+    0.1095,
+    0.11,
+    0.1105,
+    0.111,
+    0.1115,
+    0.112,
+    0.1125,
+    0.113,
+    0.1135,
+    0.114,
+    0.116,
+    0.118,
+    0.12,
+    0.122,
+    0.124,
+    0.125,
+    0.126,
+    0.128,
+    0.13,
+    0.1375,
+    0.15,
+    0.1625,
+    0.175,
+    0.1875,
+    0.2,
+    0.2125,
+    0.225,
+    0.2375,
+    0.25,
+    0.2625,
+    0.275,
+    0.2875,
+    0.3,
+    0.31,
+    0.3125,
+    0.32,
+    0.325,
+    0.33,
+    0.3375,
+    0.34,
+    0.35,
+    0.36,
+    0.3625,
+    0.37,
+    0.375,
+    0.38,
+    0.3875,
+    0.39,
+    0.4,
+    0.41,
+    0.4125,
+    0.425,
+    0.4375,
+    0.45,
+    0.4625,
+    0.475,
+    0.4875,
+    0.5,
+    0.5125,
+    0.525,
+    0.5375,
+    0.55,
+    0.5625,
+    0.575,
+    0.5875,
+    0.6,
+    0.6125,
+    0.625,
+    0.6375,
+    0.65,
+    0.6625,
+    0.675,
+    0.6875,
+    0.7,
+    0.7125,
+    0.725,
+    0.7375,
+    0.75,
+    0.7625,
+    0.775,
+    0.7875,
+    0.8
+  ],
+  "A": {
+    "eta": 0.35,
+    "power": 14.0,
+    "count": 8192.0,
+    "seed": 20260920.0,
+    "level": "fine_check",
+    "raw_w2": 0.3486137819320465,
+    "raw_wt": 0.004154763197037686,
+    "raw_wn": 0.3485887285656916,
+    "tweedie_w2": 0.04714625762730907,
+    "tweedie_wn": 0.03249531843818549,
+    "raw_discrete": 0.34877127934877467,
+    "tw_discrete": 0.04715022876240518,
+    "normal_tw_check": 9.020562075079397e-17,
+    "polar_mass": 1.0000000000000016,
+    "angular_mass": 0.999999999999994,
+    "gap": 4.73232564246473e-15,
+    "marginal": 0.0,
+    "violation": 7.229716825207788e-12,
+    "seconds": 7.8310127000000005
+  },
+  "B": {
+    "eta": 0.04,
+    "power": 14.0,
+    "count": 8192.0,
+    "seed": 20260920.0,
+    "level": "late_candidate_refined",
+    "raw_w2": 0.19178194262503576,
+    "raw_wt": 0.1877064720705075,
+    "raw_wn": 0.039997998748464,
+    "tweedie_w2": 0.22650606175661744,
+    "tweedie_wn": 6.407175424897922e-13,
+    "raw_discrete": 0.19178640152762647,
+    "tw_discrete": 0.22650606175661744,
+    "normal_tw_check": 9.695453225003177e-19,
+    "polar_mass": 1.0000000000000075,
+    "angular_mass": 0.9999999999999944,
+    "gap": 4.662936703425657e-13,
+    "marginal": 0.0,
+    "violation": 1.8070892005006556e-12,
+    "seconds": 7.2781015
+  },
+  "normalized_readouts": {
+    "A": {
+      "raw_w2": 1.5390895823681583,
+      "raw_wt": 0.0183427996401295,
+      "raw_wn": 1.5389789746493632,
+      "tweedie_w2": 0.2081452820358689,
+      "tweedie_wn": 0.14346307769810443
+    },
+    "B": {
+      "raw_w2": 0.8466951258916559,
+      "raw_wt": 0.8287023941099121,
+      "raw_wn": 0.17658654470905355,
+      "tweedie_w2": 0.9999981012248161,
+      "tweedie_wn": 2.8286939472713864e-12
+    }
+  },
+  "topology": {
+    "delta": 0.05,
+    "c": 3.861960393053912,
+    "interval_eta_over_R": [
+      0.05051587850745854,
+      0.2589358507659973
+    ],
+    "meaning": "Exact S1 homotopy regime for the closed union of sample balls, r=c eta; lower endpoint included, upper excluded.",
+    "radius_condition": "R sin(pi/N) <= r < R",
+    "not_the_sufficient_theorem_window": true
+  },
+  "numerics": {
+    "main": "4096 antithetic Sobol Gaussian nodes per rotational orbit; 4096 equal-mass target nodes on full circle; exact unregularized quotient OT",
+    "fine": "16384 nodes per orbit, 8192 full-circle target nodes at readouts and minimum neighborhood",
+    "raw_normal": "Analytic Rice radial moment",
+    "tweedie_normal": "Split polar Gauss-Legendre 48 vs 72, 9-sigma radial cutoff",
+    "tangential": "Analytic projected angular CDF, midpoint quantile integration in a fundamental sector",
+    "no_rigorous_source_quadrature_error_bound": true,
+    "maximum_gap": 4.4746151228736153e-13,
+    "maximum_marginal": 0.0,
+    "maximum_violation": 7.229716825207788e-12,
+    "maximum_normal_tw_check": 3.3061609613682484e-16
+  },
+  "snapshot": {
+    "count": 512,
+    "seed": 20261104,
+    "coupling": "Common latent training-site label and Gaussian perturbation; A prime uses exactly the A particles through empirical Tweedie.",
+    "not_flow_trajectories": true,
+    "max_abs_normalized": 1.4800495760169694,
+    "frame_limit": 1.5540520548178178,
+    "colors": "Raw blue #0072B2; empirical Tweedie orange #D55E00",
+    "panels": "A eta/R=.175 early stop and B eta/R=.02 late stop; matched local patches and whole clouds",
+    "curve_labels": "A prime and B prime mark denoised A and B, respectively",
+    "B_selection": {
+      "eta": 0.04,
+      "eta_over_R": 0.02,
+      "original_role": "Later stop: empirical Tweedie increases total error relative to the same-time raw law",
+      "additional_current_condition": "The calibrated sample neighborhood has 16 disconnected components and G(r)>0",
+      "historical_algorithm": false,
+      "source_audit": "B_selection_report.txt",
+      "G_over_SN": 0.47230525998518885,
+      "denoised_benchmark_interpretation": "Approximately S_N; the tiny numerical deficit below S_N is target quadrature bias and not evidence of a strict gain"
+    }
+  },
+  "font": "STIXGeneral; 9.2 pt ordinary labels at 6-inch publication width",
+  "sources": {
+    "repository": "https://github.com/herald1921/empirical-diffusion-generalization",
+    "commit": "5626f1c59d9a9f4951231699ec517afb67779341",
+    "files": {
+      "section_04_distribution/figure02/make_figure_02.py": "b07cbbe03a1aac1fb35c4b5b21ba97370b231f9f2ed3c77a57a16b622d8dba46",
+      "section_05_early_stopping/figure03/make_figure.py": "93899a0ea45240a4f6f5259f68224a96627305f7ea6f9bfa0e193cad2954edfb",
+      "section_05_early_stopping/numerics/numerics/make_figures_04_05.py": "295fb12696da847829c459b958f667e948c2a20a76a2a306175c97bf7709c9f9",
+      "section_05_early_stopping/numerics/numerics/refine_integrals.py": "2d1a03c170050f61a8a9b50a47c1435e1cfb07bd01c06e013af58d80bbdc368d"
+    }
+  },
+  "style": {
+    "size_inches": [
+      6.0,
+      5.2
+    ],
+    "normal_text_pt": 9.2,
+    "colors": {
+      "raw": "#0072B2",
+      "tw": "#D55E00",
+      "tangent": "#009E73",
+      "normal": "#E69F00",
+      "diversity": "#CC79A7",
+      "ink": "#26343D",
+      "gray": "#7E8B94",
+      "support": "#B5BDC2",
+      "grid": "#E7ECEF",
+      "shade": "#EDF5F2"
+    },
+    "patch_counts": {
+      "A": 79,
+      "B": 81
+    },
+    "panels": "(a) upper left D=2 error curves; (b) right D=4,8,16 small multiples of all five curves; (c) lower left matched snapshots; common one-row legend at top"
+  },
+  "dimension_comparison": {
+    "dimensions": [
+      {
+        "D": 2,
+        "c": 3.861960393053912,
+        "topology_interval_eta_over_R": [
+          0.05051587850745854,
+          0.2589358507659973
+        ],
+        "raw_below_benchmark_interval_eta_over_R": [
+          0.0,
+          0.1120390174462753
+        ],
+        "overlap_eta_over_R": [
+          0.05051587850745854,
+          0.1120390174462753
+        ],
+        "raw_over_SN_at_topology_lower": 0.7248172125246426,
+        "A_raw_over_SN": 1.5390895823681583,
+        "B_raw_over_SN": 0.8466951258916559
+      },
+      {
+        "D": 4,
+        "c": 4.447746830680817,
+        "topology_interval_eta_over_R": [
+          0.043862730825950755,
+          0.22483294082791352
+        ],
+        "raw_below_benchmark_interval_eta_over_R": [
+          0.0,
+          0.05538939003012704
+        ],
+        "overlap_eta_over_R": [
+          0.043862730825950755,
+          0.05538939003012704
+        ],
+        "raw_over_SN_at_topology_lower": 0.9178130290574449,
+        "A_raw_over_SN": 2.6728527838404474,
+        "B_raw_over_SN": 0.882759589404616
+      },
+      {
+        "D": 8,
+        "c": 5.276173955427007,
+        "topology_interval_eta_over_R": [
+          0.036975718326242975,
+          0.18953127937933367
+        ],
+        "raw_below_benchmark_interval_eta_over_R": [
+          0.0,
+          0.02769158365872399
+        ],
+        "overlap_eta_over_R": null,
+        "raw_over_SN_at_topology_lower": 1.101862117148076,
+        "A_raw_over_SN": 4.085931047771426,
+        "B_raw_over_SN": 0.9507934610839751
+      },
+      {
+        "D": 16,
+        "c": 6.447746830680817,
+        "topology_interval_eta_over_R": [
+          0.03025713123347442,
+          0.15509293808522723
+        ],
+        "raw_below_benchmark_interval_eta_over_R": [
+          0.0,
+          0.013845547439796753
+        ],
+        "overlap_eta_over_R": null,
+        "raw_over_SN_at_topology_lower": 1.27256590011834,
+        "A_raw_over_SN": 5.98299369657534,
+        "B_raw_over_SN": 1.074009139415732
+      }
+    ],
+    "G_formula": "G(r)^2=(2 R^2/alpha) (g-sin g), alpha=pi/N, g=max(alpha-arcsin(r/R),0), 0<=r<R",
+    "G_integral_checks": [
+      {
+        "r": 0.0,
+        "integral_squared": 0.05130519084635376,
+        "formula_squared": 0.05130519084635436,
+        "difference": 6.036837696399289e-16
+      },
+      {
+        "r": 0.1,
+        "integral_squared": 0.021253589003331706,
+        "formula_squared": 0.021253589003331467,
+        "difference": 2.393918396847994e-16
+      },
+      {
+        "r": 0.2,
+        "integral_squared": 0.006039361043635412,
+        "formula_squared": 0.006039361043635482,
+        "difference": 7.025630077706069e-17
+      },
+      {
+        "r": 0.35,
+        "integral_squared": 5.8020691582862914e-05,
+        "formula_squared": 5.802069158282227e-05,
+        "difference": 4.064402894105035e-17
+      },
+      {
+        "r": 0.3901806440322565,
+        "integral_squared": 0.0,
+        "formula_squared": 0.0,
+        "difference": 0.0
+      },
+      {
+        "r": 0.8,
+        "integral_squared": 0.0,
+        "formula_squared": 0.0,
+        "difference": 0.0
+      },
+      {
+        "r": 1.8,
+        "integral_squared": 0.0,
+        "formula_squared": 0.0,
+        "difference": 0.0
+      }
+    ],
+    "A": {
+      "raw_w2": 1.5390895823681583,
+      "raw_wt": 0.0183427996401295,
+      "raw_wn": 1.5389789746493632,
+      "tweedie_w2": 0.2081452820358689,
+      "tweedie_wn": 0.14346307769810443
+    },
+    "B": {
+      "raw_w2": 0.8466951258916559,
+      "raw_wt": 0.8287023941099121,
+      "raw_wn": 0.17658654470905355,
+      "tweedie_w2": 0.9999981012248161,
+      "tweedie_wn": 2.8286939472713864e-12
+    },
+    "B_eta_over_R": 0.02,
+    "common_eta_over_R": 0.175,
+    "D_identity": "W2_D^2=W2_2^2+(D-2)eta^2; WN_D^2=WN_2^2+(D-2)eta^2; WT and empirical-Tweedie law independent of D",
+    "geometry": "Fixed one-dimensional circle embedded in R^D; independent isotropic Gaussian in each added orthogonal coordinate",
+    "interval_method": "Topology intervals exact; W2<SN crossing estimated by PCHIP of refined numerical transport, not a certified continuum inequality",
+    "font": "STIX 9.2 pt at 6-inch width",
+    "patch_counts": {
+      "A": 79,
+      "B": 81
+    },
+    "outside_canvas_text": [],
+    "layout": {
+      "size_inches": [
+        6.0,
+        5.2
+      ],
+      "right_column": "Three small multiples of all five main-panel curves for D=4,8,16; D=2 appears only in the main panel",
+      "small_panels": [
+        {
+          "D": 4,
+          "eta_over_R_limits": [
+            0.4,
+            0.0
+          ],
+          "y_limits": [
+            -0.17500000000000002,
+            7.0
+          ],
+          "y_ticks": [
+            0,
+            3.5,
+            7.0
+          ],
+          "raw_max": 6.060073448513391,
+          "no_curve_clipping": true
+        },
+        {
+          "D": 8,
+          "eta_over_R_limits": [
+            0.4,
+            0.0
+          ],
+          "y_limits": [
+            -0.25,
+            10.0
+          ],
+          "y_ticks": [
+            0,
+            5.0,
+            10.0
+          ],
+          "raw_max": 9.307092746022914,
+          "no_curve_clipping": true
+        },
+        {
+          "D": 16,
+          "eta_over_R_limits": [
+            0.4,
+            0.0
+          ],
+          "y_limits": [
+            -0.35000000000000003,
+            14.0
+          ],
+          "y_ticks": [
+            0,
+            7.0,
+            14.0
+          ],
+          "raw_max": 13.65345911285719,
+          "no_curve_clipping": true
+        }
+      ],
+      "shared_legend_rows": 1,
+      "legend_text_bounds": [
+        [
+          143.79109107123486,
+          497.35624999999993,
+          39.658447265625,
+          14.800000000000068
+        ],
+        [
+          227.5328716701932,
+          497.35624999999993,
+          18.285140991210938,
+          14.800000000000068
+        ],
+        [
+          289.9013459947374,
+          497.35624999999993,
+          19.128890991210938,
+          14.800000000000068
+        ],
+        [
+          353.11357031928173,
+          497.35624999999993,
+          66.13143920898438,
+          15.800000000000068
+        ],
+        [
+          463.3283428615995,
+          496.84374999999994,
+          22.269454956054688,
+          14.625
+        ]
+      ],
+      "old_raw_overlay_and_interval_bars_removed": true,
+      "ordinary_font_sizes_pt": [
+        9.2
+      ],
+      "minimum_ordinary_font_pt": 9.2
+    },
+    "B_selection": {
+      "eta": 0.04,
+      "eta_over_R": 0.02,
+      "original_role": "Later stop: empirical Tweedie increases total error relative to the same-time raw law",
+      "additional_current_condition": "The calibrated sample neighborhood has 16 disconnected components and G(r)>0",
+      "historical_algorithm": false,
+      "source_audit": "B_selection_report.txt",
+      "G_over_SN": 0.47230525998518885,
+      "denoised_benchmark_interpretation": "Approximately S_N; the tiny numerical deficit below S_N is target quadrature bias and not evidence of a strict gain"
+    }
+  }
+}

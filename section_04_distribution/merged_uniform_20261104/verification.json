@@ -1,0 +1,109 @@
+{
+  "source_quadrature_sensitivity": [
+    {
+      "eta": 0.11,
+      "power": 12,
+      "seed": 20260921,
+      "raw_difference_over_SN": 4.5763332030670486e-06,
+      "tweedie_difference_over_SN": 0.0001267747247666294
+    },
+    {
+      "eta": 0.11,
+      "power": 14,
+      "seed": 20260920,
+      "raw_difference_over_SN": -2.793308655276157e-05,
+      "tweedie_difference_over_SN": 0.0001964546333279563
+    },
+    {
+      "eta": 0.35,
+      "power": 12,
+      "seed": 20260921,
+      "raw_difference_over_SN": 8.08358930015428e-06,
+      "tweedie_difference_over_SN": 0.0005426815431568971
+    },
+    {
+      "eta": 0.35,
+      "power": 14,
+      "seed": 20260920,
+      "raw_difference_over_SN": -5.309683832767673e-06,
+      "tweedie_difference_over_SN": 0.00011690828317240412
+    },
+    {
+      "eta": 0.5,
+      "power": 12,
+      "seed": 20260921,
+      "raw_difference_over_SN": 1.108548763936438e-07,
+      "tweedie_difference_over_SN": 3.5220057050627824e-05
+    },
+    {
+      "eta": 0.5,
+      "power": 14,
+      "seed": 20260920,
+      "raw_difference_over_SN": -6.801689190885017e-06,
+      "tweedie_difference_over_SN": -7.075294713311257e-05
+    }
+  ],
+  "angular_validation": [
+    {
+      "eta": 0.111,
+      "quotient_ot_squared": 0.01450757583114158,
+      "quantile_squared": 0.014507575831141591,
+      "squared_difference": 1.214306433183765e-17,
+      "quantile_refinement_over_SN": 6.550618259093483e-12,
+      "solver": {
+        "gap": 1.0408340855860843e-17,
+        "marginal": 0.0,
+        "violation": 1.249000902703301e-16
+      }
+    },
+    {
+      "eta": 0.35,
+      "quotient_ot_squared": 1.7262057379421186e-05,
+      "quantile_squared": 1.7262057379435023e-05,
+      "squared_difference": 1.383713022634625e-17,
+      "quantile_refinement_over_SN": 3.568909364287809e-15,
+      "solver": {
+        "gap": 1.3552527156068805e-20,
+        "marginal": 0.0,
+        "violation": 4.37069000783219e-19
+      }
+    }
+  ],
+  "curve_count": 94,
+  "maximum_polar_mass_error": 7.549516567451064e-15,
+  "maximum_angular_mass_error": 1.2545520178264269e-14,
+  "maximum_polar_normal_refinement_over_SN": 1.459631878313416e-15,
+  "pdf": {
+    "pages": 1,
+    "raster_images": 0,
+    "fonts": [
+      "CZRBLR+STIXGeneral-Regular",
+      "EUPODS+STIXNonUnicode-Italic",
+      "FTXWZA+STIXGeneral-Italic",
+      "FWBXUE+STIXGeneral-Bold"
+    ],
+    "media_box": " 0 0 432 374.4 ",
+    "render": "figure_02_final_pdf_check.png",
+    "render_tool": "Poppler pdftoppm, 160 dpi",
+    "visual_qa": "No overlap or clipping; B and B-prime labels separated from S_N; three right plots",
+    "ordinary_font_sizes_pt": [
+      9.2
+    ]
+  },
+  "dimension_validation": "dimension_comparison_audit.json",
+  "minimal_reproduction": {
+    "runtime_files": 10,
+    "fresh_directory": "repro_smoke_v6",
+    "command": "python plot_uniform_dimensions.py --final",
+    "png_sha256_equal": true
+  },
+  "B_high_precision": {
+    "eta": 0.04,
+    "nodes_per_orbit": 16384,
+    "full_circle_target_nodes": 8192,
+    "empirical_discrete_target_cost_over_exact_SN": 0.9999981012248195,
+    "target_relative_bias": 1.8987751805310538e-06,
+    "denoised_cost_over_SN": 0.9999981012248161,
+    "interpretation": "approximately S_N, no strict-below benchmark claim"
+  }
+}
