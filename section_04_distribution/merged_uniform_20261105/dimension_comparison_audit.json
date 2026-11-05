@@ -1,0 +1,255 @@
+{
+  "dimensions": [
+    {
+      "D": 2,
+      "c": 3.861960393053912,
+      "topology_interval_eta_over_R": [
+        0.05051587850745854,
+        0.2589358507659973
+      ],
+      "raw_below_benchmark_interval_eta_over_R": [
+        0.0,
+        0.1120390174462753
+      ],
+      "overlap_eta_over_R": [
+        0.05051587850745854,
+        0.1120390174462753
+      ],
+      "raw_over_SN_at_topology_lower": 0.7248172125246426,
+      "A_raw_over_SN": 1.5390895823681583,
+      "B_raw_over_SN": 0.8466951258916559
+    },
+    {
+      "D": 4,
+      "c": 4.447746830680817,
+      "topology_interval_eta_over_R": [
+        0.043862730825950755,
+        0.22483294082791352
+      ],
+      "raw_below_benchmark_interval_eta_over_R": [
+        0.0,
+        0.05538939003012704
+      ],
+      "overlap_eta_over_R": [
+        0.043862730825950755,
+        0.05538939003012704
+      ],
+      "raw_over_SN_at_topology_lower": 0.9178130290574449,
+      "A_raw_over_SN": 2.6728527838404474,
+      "B_raw_over_SN": 0.882759589404616
+    },
+    {
+      "D": 8,
+      "c": 5.276173955427007,
+      "topology_interval_eta_over_R": [
+        0.036975718326242975,
+        0.18953127937933367
+      ],
+      "raw_below_benchmark_interval_eta_over_R": [
+        0.0,
+        0.02769158365872399
+      ],
+      "overlap_eta_over_R": null,
+      "raw_over_SN_at_topology_lower": 1.101862117148076,
+      "A_raw_over_SN": 4.085931047771426,
+      "B_raw_over_SN": 0.9507934610839751
+    },
+    {
+      "D": 16,
+      "c": 6.447746830680817,
+      "topology_interval_eta_over_R": [
+        0.03025713123347442,
+        0.15509293808522723
+      ],
+      "raw_below_benchmark_interval_eta_over_R": [
+        0.0,
+        0.013845547439796753
+      ],
+      "overlap_eta_over_R": null,
+      "raw_over_SN_at_topology_lower": 1.27256590011834,
+      "A_raw_over_SN": 5.98299369657534,
+      "B_raw_over_SN": 1.074009139415732
+    }
+  ],
+  "G_formula": "G(r)^2=(2 R^2/alpha) (g-sin g), alpha=pi/N, g=max(alpha-arcsin(r/R),0), 0<=r<R",
+  "G_integral_checks": [
+    {
+      "r": 0.0,
+      "integral_squared": 0.05130519084635376,
+      "formula_squared": 0.05130519084635436,
+      "difference": 6.036837696399289e-16
+    },
+    {
+      "r": 0.1,
+      "integral_squared": 0.021253589003331706,
+      "formula_squared": 0.021253589003331467,
+      "difference": 2.393918396847994e-16
+    },
+    {
+      "r": 0.2,
+      "integral_squared": 0.006039361043635412,
+      "formula_squared": 0.006039361043635482,
+      "difference": 7.025630077706069e-17
+    },
+    {
+      "r": 0.35,
+      "integral_squared": 5.8020691582862914e-05,
+      "formula_squared": 5.802069158282227e-05,
+      "difference": 4.064402894105035e-17
+    },
+    {
+      "r": 0.3901806440322565,
+      "integral_squared": 0.0,
+      "formula_squared": 0.0,
+      "difference": 0.0
+    },
+    {
+      "r": 0.8,
+      "integral_squared": 0.0,
+      "formula_squared": 0.0,
+      "difference": 0.0
+    },
+    {
+      "r": 1.8,
+      "integral_squared": 0.0,
+      "formula_squared": 0.0,
+      "difference": 0.0
+    }
+  ],
+  "A": {
+    "raw_w2": 1.5390895823681583,
+    "raw_wt": 0.0183427996401295,
+    "raw_wn": 1.5389789746493632,
+    "tweedie_w2": 0.2081452820358689,
+    "tweedie_wn": 0.14346307769810443
+  },
+  "B": {
+    "raw_w2": 0.8466951258916559,
+    "raw_wt": 0.8287023941099121,
+    "raw_wn": 0.17658654470905355,
+    "tweedie_w2": 0.9999981012248161,
+    "tweedie_wn": 2.8286939472713864e-12
+  },
+  "B_eta_over_R": 0.02,
+  "common_eta_over_R": 0.175,
+  "D_identity": "W2_D^2=W2_2^2+(D-2)eta^2; WN_D^2=WN_2^2+(D-2)eta^2; WT and empirical-Tweedie law independent of D",
+  "geometry": "Fixed one-dimensional circle embedded in R^D; independent isotropic Gaussian in each added orthogonal coordinate",
+  "interval_method": "Topology intervals exact; W2<SN crossing estimated by PCHIP of refined numerical transport, not a certified continuum inequality",
+  "font": "STIX 9.2 pt at 6-inch width",
+  "patch_counts": {
+    "A": 79,
+    "B": 81
+  },
+  "outside_canvas_text": [],
+  "layout": {
+    "size_inches": [
+      6.0,
+      4.35
+    ],
+    "right_column": "Three small multiples of all five main-panel curves for D=4,8,16; D=2 appears only in the main panel",
+    "small_panels": [
+      {
+        "D": 4,
+        "eta_over_R_limits": [
+          0.4,
+          0.0
+        ],
+        "y_limits": [
+          -0.17500000000000002,
+          7.0
+        ],
+        "y_ticks": [
+          0,
+          3.5,
+          7.0
+        ],
+        "raw_max": 6.060073448513391,
+        "no_curve_clipping": true
+      },
+      {
+        "D": 8,
+        "eta_over_R_limits": [
+          0.4,
+          0.0
+        ],
+        "y_limits": [
+          -0.25,
+          10.0
+        ],
+        "y_ticks": [
+          0,
+          5.0,
+          10.0
+        ],
+        "raw_max": 9.307092746022914,
+        "no_curve_clipping": true
+      },
+      {
+        "D": 16,
+        "eta_over_R_limits": [
+          0.4,
+          0.0
+        ],
+        "y_limits": [
+          -0.35000000000000003,
+          14.0
+        ],
+        "y_ticks": [
+          0,
+          7.0,
+          14.0
+        ],
+        "raw_max": 13.65345911285719,
+        "no_curve_clipping": true
+      }
+    ],
+    "shared_legend_rows": 1,
+    "legend_text_bounds": [
+      [
+        143.79109107123486,
+        407.35625,
+        39.658447265625,
+        14.800000000000011
+      ],
+      [
+        227.5328716701932,
+        407.35625,
+        18.285140991210938,
+        14.800000000000011
+      ],
+      [
+        289.9013459947374,
+        407.35625,
+        19.128890991210938,
+        14.800000000000011
+      ],
+      [
+        353.11357031928173,
+        407.35625,
+        66.13143920898438,
+        15.800000000000011
+      ],
+      [
+        463.3283428615995,
+        406.84375,
+        22.269454956054688,
+        14.625
+      ]
+    ],
+    "old_raw_overlay_and_interval_bars_removed": true,
+    "ordinary_font_sizes_pt": [
+      9.2
+    ],
+    "minimum_ordinary_font_pt": 9.2
+  },
+  "B_selection": {
+    "eta": 0.04,
+    "eta_over_R": 0.02,
+    "original_role": "Later stop: empirical Tweedie increases total error relative to the same-time raw law",
+    "additional_current_condition": "The calibrated sample neighborhood has 16 disconnected components and G(r)>0",
+    "historical_algorithm": false,
+    "source_audit": "B_selection_report.txt",
+    "G_over_SN": 0.47230525998518885,
+    "denoised_benchmark_interpretation": "Approximately S_N; the tiny numerical deficit below S_N is target quadrature bias and not evidence of a strict gain"
+  }
+}

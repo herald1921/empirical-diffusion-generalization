@@ -1,0 +1,92 @@
+[
+  {
+    "path": "B_selection_report.txt",
+    "sha256": "54ecb0d0ccddfc51abb73b00ee3c7bf12d9b5180c7f1f3446383e2bf1a04d337",
+    "bytes": 5084
+  },
+  {
+    "path": "README.md",
+    "sha256": "69055400de0a912cd3c5dd857f53eb71e4938caded355b17ad8150d10458a415",
+    "bytes": 1476
+  },
+  {
+    "path": "compute_uniform.py",
+    "sha256": "ee8a8ca964676bb3371894703a77cf577cdc8aaa5e059f5827e2b47e901220bf",
+    "bytes": 8761
+  },
+  {
+    "path": "curves_dense.csv",
+    "sha256": "517d9e59d0ce967504a6b0a6da3b17b98b64f99c17ea43ea4ee3ac7ba27a6d6b",
+    "bytes": 28100
+  },
+  {
+    "path": "dimension_checks.csv",
+    "sha256": "11616e83cb05f3f2c4ba302c371c4a5006571f100e73db55d07e925717143f1f",
+    "bytes": 10430
+  },
+  {
+    "path": "dimension_comparison_audit.json",
+    "sha256": "a9d0e6c276964e20fad0250912837953c07142e823ee53850f263b4b8c324c31",
+    "bytes": 6821
+  },
+  {
+    "path": "dimension_curves.csv",
+    "sha256": "2875c7aea6c83d377db906a67721d33cc8c198df92043eeb0ad3f1c838bbbef1",
+    "bytes": 69146
+  },
+  {
+    "path": "figure_02_stopping_denoising_uniform.pdf",
+    "sha256": "6145c73ac5e97f3e325d3e15a5fc27b66fb81959fe32da9e7a5915c559faffc9",
+    "bytes": 61655
+  },
+  {
+    "path": "figure_02_stopping_denoising_uniform.png",
+    "sha256": "86cde6230a771382bc62983fbe2fdac75eb24533fee83c19bef99185559ba0bf",
+    "bytes": 289543
+  },
+  {
+    "path": "figure_02_stopping_denoising_uniform.svg",
+    "sha256": "4d257573166a78f96d46ba12b15d05b3d87ae64c2310bcf8f502d34c85c47a00",
+    "bytes": 338876
+  },
+  {
+    "path": "fine_checks.csv",
+    "sha256": "bcb6e98cf9cb9b643ff601c4792d1940a2f04a9b83642f36af8183a2ea64825d",
+    "bytes": 1952
+  },
+  {
+    "path": "input_hashes.json",
+    "sha256": "2cfeb620f61453eb0b6461843c3ed9dc2d48f827e66989317f1bb1cf1f3ad909",
+    "bytes": 847
+  },
+  {
+    "path": "late_b_candidates.csv",
+    "sha256": "8d8f70e146ffd4fe63db982ec6ae2174a9cab76b3211580b177380dcda9b7d19",
+    "bytes": 2181
+  },
+  {
+    "path": "late_stop_checks.csv",
+    "sha256": "d8c5539ce74f32ee8eca35675570668da94e2097b3d7081e51c0f6e58038dbe4",
+    "bytes": 750
+  },
+  {
+    "path": "minimum_search.csv",
+    "sha256": "4a4438a243f0433d2f483e17e87dab6a37df754b0085c82a4c9e9df36f432358",
+    "bytes": 4123
+  },
+  {
+    "path": "plot_uniform_dimensions.py",
+    "sha256": "5995b006ba618f1bd145a5f0b80a3b2fc5e16cf249ef902c09e409f8e22c611b",
+    "bytes": 13407
+  },
+  {
+    "path": "requirements_uniform.txt",
+    "sha256": "ad2d43de2ef6eeb3adce189d22b93533f5bb1ffd1f7a4f100302efa2b1a658ea",
+    "bytes": 62
+  },
+  {
+    "path": "snapshot_data.npz",
+    "sha256": "91058825699831186076c454311876372348277642611cd0d1e23ac5f84c6056",
+    "bytes": 47062
+  }
+]

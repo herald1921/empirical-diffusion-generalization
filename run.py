@@ -3,7 +3,8 @@ from pathlib import Path
 import argparse,ast,json,subprocess,sys,os,hashlib
 R=Path(__file__).resolve().parent
 JOBS={
- 'figure2-uniform':['section_04_distribution/merged_uniform_20261104/plot_uniform_dimensions.py','--final'],
+ 'figure2-uniform':['section_04_distribution/merged_uniform_20261105/plot_uniform_dimensions.py'],
+ 'figure2-uniform-20261104':['section_04_distribution/merged_uniform_20261104/plot_uniform_dimensions.py','--final'],
  'figure1':['section_03_topological_phases/figure01.py'],
  'figure2':['section_04_distribution/figure02/make_figure_02.py','plot'],
  'figure3':['section_05_early_stopping/figure03/make_figure.py'],

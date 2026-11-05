@@ -1,0 +1,11 @@
+{
+  "compute_uniform.py": "ee8a8ca964676bb3371894703a77cf577cdc8aaa5e059f5827e2b47e901220bf",
+  "curves_dense.csv": "517d9e59d0ce967504a6b0a6da3b17b98b64f99c17ea43ea4ee3ac7ba27a6d6b",
+  "dimension_checks.csv": "11616e83cb05f3f2c4ba302c371c4a5006571f100e73db55d07e925717143f1f",
+  "minimum_search.csv": "4a4438a243f0433d2f483e17e87dab6a37df754b0085c82a4c9e9df36f432358",
+  "fine_checks.csv": "bcb6e98cf9cb9b643ff601c4792d1940a2f04a9b83642f36af8183a2ea64825d",
+  "late_stop_checks.csv": "d8c5539ce74f32ee8eca35675570668da94e2097b3d7081e51c0f6e58038dbe4",
+  "late_b_candidates.csv": "8d8f70e146ffd4fe63db982ec6ae2174a9cab76b3211580b177380dcda9b7d19",
+  "snapshot_data.npz": "91058825699831186076c454311876372348277642611cd0d1e23ac5f84c6056",
+  "requirements_uniform.txt": "ad2d43de2ef6eeb3adce189d22b93533f5bb1ffd1f7a4f100302efa2b1a658ea"
+}

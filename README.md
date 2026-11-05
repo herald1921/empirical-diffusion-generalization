@@ -11,11 +11,19 @@ This code release includes synthetic inputs and numerical records. Obtain image
 datasets independently; image-bearing experiment archives and model weights are
 not distributed here.
 
+## Compact Figure 2 layout (2026-11-05)
+
+Run `python run.py figure2-uniform` for the current 6 x 4.35 inch layout:
+[`section_04_distribution/merged_uniform_20261105/`](section_04_distribution/merged_uniform_20261105/).
+It preserves the previous data, colors and 9.2 pt STIX font, while reducing
+lower-left whitespace and the height of the right-column plots.
+The old layout remains available with `python run.py figure2-uniform-20261104`.
+
 ## Revised merged Figure 2 (2026-11-04)
 
 The reorganized Section 4 uses a uniform-circle target with 16 equally spaced
 sites, merged stopping/denoising readouts, and ambient-dimension comparisons.
-Run `python run.py figure2-uniform`; see
+Run `python run.py figure2-uniform-20261104`; see
 [`section_04_distribution/merged_uniform_20261104/`](section_04_distribution/merged_uniform_20261104/).
 This version is separate from the historical paper map below. All earlier code,
 inputs, and figure jobs are retained.
