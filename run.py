@@ -3,6 +3,8 @@ from pathlib import Path
 import argparse,ast,json,subprocess,sys,os,hashlib
 R=Path(__file__).resolve().parent
 JOBS={
+ 'figure7-diversity':['appendix_c_geometries/synthetic_diversity_20261105/plot_synthetic_diversity.py','--repository',str(R),'--input',str(R/'appendix_c_geometries/synthetic_diversity_20261105/inputs/synthetic_geometry_template.pdf')],
+ 'geometry-diversity':['appendix_c_geometries/synthetic_diversity_20261105/compute_diversity.py','--repository',str(R)],
  'figure2-uniform':['section_04_distribution/merged_uniform_20261105/plot_uniform_dimensions.py'],
  'figure2-uniform-20261104':['section_04_distribution/merged_uniform_20261104/plot_uniform_dimensions.py','--final'],
  'figure1':['section_03_topological_phases/figure01.py'],

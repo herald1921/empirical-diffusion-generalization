@@ -1,0 +1,17 @@
+{
+  "renamed": {
+    "figure_04_celeba_empirical_averaging.pdf": "figure_03_celeba_empirical_averaging.pdf",
+    "figure_05_celeba_empirical_unet.pdf": "figure_04_celeba_empirical_unet.pdf",
+    "figure_06_celeba_cross_architecture.pdf": "figure_05_celeba_cross_architecture.pdf",
+    "figure_07_celeba_field_replacement.pdf": "figure_06_celeba_field_replacement.pdf",
+    "figure_08_synthetic_geometries.pdf": "figure_07_synthetic_geometries.pdf",
+    "figure_09_mnist_comparison.pdf": "figure_08_mnist_comparison.pdf",
+    "figure_10_celeba_mlp_extended_training.pdf": "figure_09_celeba_mlp_extended_training.pdf"
+  },
+  "unreferenced": [
+    "figure_02_wasserstein_decomposition.pdf",
+    "figure_03_early_stopping_denoising.pdf",
+    "figure_09_mnist_comparison_continued.pdf"
+  ],
+  "historic_github_code": "retained"
+}

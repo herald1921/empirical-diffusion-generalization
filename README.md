@@ -28,7 +28,33 @@ Run `python run.py figure2-uniform-20261104`; see
 This version is separate from the historical paper map below. All earlier code,
 inputs, and figure jobs are retained.
 
-## Paper and code map
+## Current manuscript figure map (2026-11-05)
+
+The reorganized manuscript has nine figures. Historical directories and job
+names below are retained for reproducibility; they do not imply the current
+figure number. Figure-file names in the manuscript now match this table.
+
+| Current figure | Content | Code |
+|---|---|---|
+| 1 | Topological phases | `section_03_topological_phases/` |
+| 2 | Merged uniform-circle comparison | `section_04_distribution/merged_uniform_20261105/` |
+| 3 | CelebA empirical averaging | `section_06_discussion/figure04/` |
+| 4 | Empirical and U-Net comparison | `section_06_discussion/figure05/` |
+| 5 | Cross-architecture comparison | `section_06_discussion/figure06/` |
+| 6 | Field replacement | `section_06_discussion/figure07/` |
+| 7 | Synthetic geometries with diversity deficit | `appendix_c_geometries/synthetic_diversity_20261105/` |
+| 8 | MNIST comparison | `appendix_d_images/figure09/` |
+| 9 | Extended MLP training | `appendix_d_images/figure10/` |
+
+Run `python run.py geometry-diversity` to recompute the added deficit data,
+then `python run.py figure7-diversity` to redraw Figure 7. See the new
+[release README](appendix_c_geometries/synthetic_diversity_20261105/README.md)
+for dependencies, projection domains, normalization and numerical checks.
+The self-intersecting figure eight has no added deficit curve. Historical
+transport measurements, topology records and plotting code are preserved.
+
+## Historical paper and code map
+
 
 | Paper location | Experiment | Directory |
 |---|---|---|

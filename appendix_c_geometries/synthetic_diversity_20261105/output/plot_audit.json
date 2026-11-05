@@ -1,0 +1,14 @@
+{
+  "input_sha256": "959f76e4979576c15340bfae3868fa98831e8c09bdd76ee2d87636310f42019b",
+  "frozen_curves_sha256": "7040f89e98a7cf2da3f5a925e7ffe982b07a8e12c76365ebd1c5d037939ee311",
+  "G_data_sha256": "c627d2e81496f212e5ed722f15466a22d2f13ac519b4e951aa3f25884c4e986f",
+  "G_color": "#CC79A7",
+  "G_omitted": [
+    "eight"
+  ],
+  "ordinary_font_pt": 9.2,
+  "original_geometry_preserved": true,
+  "original_transport_curves_preserved": true,
+  "outside_canvas_text": [],
+  "shared_legend_rows": 1
+}

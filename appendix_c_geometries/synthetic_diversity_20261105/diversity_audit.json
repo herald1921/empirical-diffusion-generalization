@@ -1,0 +1,274 @@
+{
+  "definition": "G(r)=inf_{supp(v) subset Pi(U_r)} W2(p,v), ambient cost; projected-neighborhood deficit, not a denoised-law component measured on full support",
+  "normalization": "Use existing 512-point assignment endpoint_SN from frozen Figure 8; do not force G(0)=S_N.",
+  "input_provenance": {
+    "repository": "https://github.com/herald1921/empirical-diffusion-generalization",
+    "designs": {
+      "ellipse": {
+        "original_path": "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/designs/ellipse_N16_a0.1_design_r0/training.npy",
+        "sha256": "b7a2dc4eb01ab205102d6a9cfaf9c20e3082794c0c53079814955fadb93f737c",
+        "metadata_sha256_verified": true
+      },
+      "sphere": {
+        "original_path": "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/designs/sphere_N16_a0.0_design_r0/training.npy",
+        "sha256": "0d12e49956ff9267630779589b037ec6330efad4ea4845bf53961e973f62e699",
+        "metadata_sha256_verified": true
+      }
+    },
+    "endpoint_SN": {
+      "ellipse": 0.17929175701127353,
+      "sphere": 0.7304544958953428,
+      "segment": 0.062469474967654204,
+      "eight": 0.1815412617029595
+    },
+    "original_eta_grid": [
+      0.008,
+      0.015,
+      0.025,
+      0.04,
+      0.06,
+      0.08,
+      0.11,
+      0.15,
+      0.2,
+      0.28,
+      0.38,
+      0.52,
+      0.72,
+      1.0,
+      1.4,
+      2.0
+    ],
+    "original_audit_path": "appendix_c_geometries/figure8_appendixC_20261019/output/figure8_audit.json"
+  },
+  "eta_grid_count": 422,
+  "eta_plot_range": [
+    0.008,
+    2.0
+  ],
+  "radius_calibration": "r=(sqrt(D)+sqrt(2 log(20))) eta",
+  "domains": {
+    "ellipse": {
+      "reach": 0.5,
+      "eta_strict_upper": 0.12946792538299864
+    },
+    "sphere": {
+      "reach": 2.0,
+      "eta_strict_upper": 0.47849206423244633
+    },
+    "segment": {
+      "reach": "infinity",
+      "definition_extension": "same projected-neighborhood formula using globally unique projection onto the convex segment"
+    },
+    "eight": {
+      "defined": false,
+      "reason": "self-intersection gives zero reach; omitted per user decision"
+    }
+  },
+  "formulas": {
+    "sphere": "A_r is union of spherical caps of angular radius beta=asin(r/2); G^2=8 E[1-cos((theta_nearest-beta)_+)].",
+    "segment": "Let a=sqrt(3), l=a/16. G^2=((l-r)_+)^3/(3l).",
+    "ellipse": "Pi(ball(z_i,r)) is connected parameter arc; endpoints solve |(z_i-y(theta)) dot unit_tangent(theta)|=r. Distance to uncovered points is minimum distance to arc endpoints, integrated against (1+.1 cos(theta))/(2pi)."
+  },
+  "ellipse_sample_cover_upper_bound": 0.435949643858899,
+  "ellipse_max_adaptive_error_estimate": 2.0669261061050438e-11,
+  "ellipse_checks": [
+    {
+      "radius": 0.0,
+      "G_squared": 0.03199305125952852,
+      "adaptive_error_estimate": 3.242784203616195e-14,
+      "base_squared_difference": 5.88418203051333e-14,
+      "mesh_squared_difference": 1.8809794000151925e-11
+    },
+    {
+      "radius": 0.02,
+      "G_squared": 0.026358761307740813,
+      "adaptive_error_estimate": 6.127566024079177e-14,
+      "base_squared_difference": 2.612975807947393e-12,
+      "mesh_squared_difference": 5.0844124049875816e-11
+    },
+    {
+      "radius": 0.08,
+      "G_squared": 0.013659634202486632,
+      "adaptive_error_estimate": 3.184558554670687e-14,
+      "base_squared_difference": 1.1794714510626747e-12,
+      "mesh_squared_difference": 2.5548391527352443e-11
+    },
+    {
+      "radius": 0.16,
+      "G_squared": 0.004489886592978088,
+      "adaptive_error_estimate": 4.202859297871249e-14,
+      "base_squared_difference": 1.0954778750793537e-13,
+      "mesh_squared_difference": 4.697612090986958e-11
+    },
+    {
+      "radius": 0.24,
+      "G_squared": 0.0009617129214391713,
+      "adaptive_error_estimate": 6.273186084459722e-14,
+      "base_squared_difference": 7.587406180772915e-13,
+      "mesh_squared_difference": 7.593012590206838e-12
+    },
+    {
+      "radius": 0.32,
+      "G_squared": 6.771566146861922e-05,
+      "adaptive_error_estimate": 3.3336399187838054e-14,
+      "base_squared_difference": 1.8033650053404966e-11,
+      "mesh_squared_difference": 1.2882017434918177e-10
+    },
+    {
+      "radius": 0.4,
+      "G_squared": 0.0,
+      "adaptive_error_estimate": 0.0,
+      "base_squared_difference": 0.0,
+      "mesh_squared_difference": 0.0
+    },
+    {
+      "radius": 0.49,
+      "G_squared": 0.0,
+      "adaptive_error_estimate": 0.0,
+      "base_squared_difference": 0.0,
+      "mesh_squared_difference": 0.0
+    }
+  ],
+  "sphere": {
+    "power": 20,
+    "seed": 777,
+    "cover_angle": 0.683333085884769,
+    "cover_radius": 1.2627624862004831,
+    "largest_sample_angle": 0.6830733162762102
+  },
+  "sphere_checks": [
+    {
+      "radius": 0.0,
+      "G_squared": 0.5297738180978282,
+      "coarse_squared_difference": 1.0035297428601098e-06,
+      "independent_squared_difference": 6.721906498086128e-08,
+      "independent_G_difference": 4.617609605794826e-08
+    },
+    {
+      "radius": 0.08,
+      "G_squared": 0.42901174353139243,
+      "coarse_squared_difference": 9.137395853842101e-07,
+      "independent_squared_difference": 5.930203200721351e-08,
+      "independent_G_difference": 4.526942454230465e-08
+    },
+    {
+      "radius": 0.2,
+      "G_squared": 0.3001159836387306,
+      "coarse_squared_difference": 7.779051489076316e-07,
+      "independent_squared_difference": 4.7222029009308386e-08,
+      "independent_G_difference": 4.309928525181306e-08
+    },
+    {
+      "radius": 0.4,
+      "G_squared": 0.14266207275098486,
+      "coarse_squared_difference": 5.375251952988158e-07,
+      "independent_squared_difference": 2.7654155909662137e-08,
+      "independent_G_difference": 3.6608010345329234e-08
+    },
+    {
+      "radius": 0.7,
+      "G_squared": 0.025124137576447825,
+      "coarse_squared_difference": 1.8670494128514292e-07,
+      "independent_squared_difference": 5.766523147876512e-09,
+      "independent_G_difference": 1.8190242451199268e-08
+    },
+    {
+      "radius": 1.0,
+      "G_squared": 0.0008021497358650653,
+      "coarse_squared_difference": 1.124208635627788e-07,
+      "independent_squared_difference": 7.900424203732825e-09,
+      "independent_G_difference": 1.3947347559870038e-07
+    },
+    {
+      "radius": 1.1364862375804348,
+      "G_squared": 3.78702489940326e-05,
+      "coarse_squared_difference": 2.7611333663912774e-08,
+      "independent_squared_difference": 5.18497193097156e-10,
+      "independent_G_difference": 4.212780390679127e-08
+    },
+    {
+      "radius": 1.2501348613384784,
+      "G_squared": 3.366865271024999e-09,
+      "coarse_squared_difference": 2.4633623989478966e-10,
+      "independent_squared_difference": 1.0718871620313801e-10,
+      "independent_G_difference": 9.311181782529587e-07
+    },
+    {
+      "radius": 1.2627624862004831,
+      "G_squared": 0.0,
+      "coarse_squared_difference": 0.0,
+      "independent_squared_difference": 0.0,
+      "independent_G_difference": 0.0
+    },
+    {
+      "radius": 1.9,
+      "G_squared": 0.0,
+      "coarse_squared_difference": 0.0,
+      "independent_squared_difference": 0.0,
+      "independent_G_difference": 0.0
+    }
+  ],
+  "segment_checks": [
+    {
+      "radius": 0.0,
+      "formula": 0.003906249999999999,
+      "integral": 0.0039062499999999996,
+      "difference": 4.336808689942018e-19
+    },
+    {
+      "radius": 0.02,
+      "formula": 0.0021165528790534787,
+      "integral": 0.0021165528790534783,
+      "difference": 4.336808689942018e-19
+    },
+    {
+      "radius": 0.07,
+      "formula": 0.00017236162444860627,
+      "integral": 0.0001723616244486063,
+      "difference": 2.710505431213761e-20
+    },
+    {
+      "radius": 0.1,
+      "formula": 1.7310170165128305e-06,
+      "integral": 1.7310170165128311e-06,
+      "difference": 6.352747104407253e-22
+    },
+    {
+      "radius": 0.10825317547305482,
+      "formula": 0.0,
+      "integral": 0.0,
+      "difference": 0.0
+    },
+    {
+      "radius": 0.2,
+      "formula": 0.0,
+      "integral": 0.0,
+      "difference": 0.0
+    }
+  ],
+  "zero_on_log_axis": "Exact zero values are retained in CSV. They must not be represented as positive values without marking a display floor; no line outside defined domains.",
+  "limitations": "Sphere values are numerical Sobol quadrature, with refinement and independent-scramble checks, not certified deterministic continuum error bounds. Existing W2/WT/WN curves and empirical normalization were not recomputed.",
+  "runtime_seconds": 20.361872673034668,
+  "ellipse_projection_checks": [
+    {
+      "radius": 0.08,
+      "boundary_directions_per_site": 1024,
+      "maximum_arc_violation": 0.0,
+      "maximum_endpoint_projection_or_ball_error": 9.853229343548264e-16
+    },
+    {
+      "radius": 0.24,
+      "boundary_directions_per_site": 1024,
+      "maximum_arc_violation": 0.0,
+      "maximum_endpoint_projection_or_ball_error": 1.3877787807814457e-15
+    },
+    {
+      "radius": 0.49,
+      "boundary_directions_per_site": 1024,
+      "maximum_arc_violation": 0.0,
+      "maximum_endpoint_projection_or_ball_error": 1.887379141862766e-15
+    }
+  ],
+  "normalization_discretization_note": "The retained S_N values are finite-quadrature assignment estimates. In particular, the continuum segment G(0)=1/16 normalizes to 1.000488639 under this legacy estimate; this is benchmark discretization, not a violation of the continuum G(0)<=W2(p,p_N) inequality. Plotted eta>=.008 does not show this endpoint."
+}

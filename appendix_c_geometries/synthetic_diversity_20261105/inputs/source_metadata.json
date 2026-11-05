@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/herald1921/empirical-diffusion-generalization",
+  "designs": {
+    "ellipse": {
+      "original_path": "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/designs/ellipse_N16_a0.1_design_r0/training.npy",
+      "sha256": "b7a2dc4eb01ab205102d6a9cfaf9c20e3082794c0c53079814955fadb93f737c",
+      "metadata_sha256_verified": true
+    },
+    "sphere": {
+      "original_path": "appendix_c_geometries/appendix_jmlr_revision_20261018/evidence_bundle/designs/sphere_N16_a0.0_design_r0/training.npy",
+      "sha256": "0d12e49956ff9267630779589b037ec6330efad4ea4845bf53961e973f62e699",
+      "metadata_sha256_verified": true
+    }
+  },
+  "endpoint_SN": {
+    "ellipse": 0.17929175701127353,
+    "sphere": 0.7304544958953428,
+    "segment": 0.062469474967654204,
+    "eight": 0.1815412617029595
+  },
+  "original_eta_grid": [
+    0.008,
+    0.015,
+    0.025,
+    0.04,
+    0.06,
+    0.08,
+    0.11,
+    0.15,
+    0.2,
+    0.28,
+    0.38,
+    0.52,
+    0.72,
+    1.0,
+    1.4,
+    2.0
+  ],
+  "original_audit_path": "appendix_c_geometries/figure8_appendixC_20261019/output/figure8_audit.json"
+}

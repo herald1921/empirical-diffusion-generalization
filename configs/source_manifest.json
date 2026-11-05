@@ -29,8 +29,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "fa234d20b646e7230601e766b8b489d35c2bddc068c28624937840e2f777cb65",
-    "bytes": 5894,
+    "sha256": "a8d7a76b37e7a4a69141371373d547d5cd65e90fef6c62c3170d7522df78339d",
+    "bytes": 7344,
     "original_sha256": "6707eda188aec18670be632b6e067c0e8ae7f8167e282f2858b6a23357ec9a95",
     "modified": true
   },
@@ -621,8 +621,8 @@
   },
   {
     "path": "run.py",
-    "sha256": "630f7cd70d1ff1438347c760a15989f81743e241c49504172c6536dc0406cb07",
-    "bytes": 2748,
+    "sha256": "03159bb0ca0175c544b2b9de9534162bccc14582a51f617b9b6af0a37d5996a8",
+    "bytes": 3105,
     "original_sha256": "68ac23307f3d27c4a216331771d3713be4b367ffbb8478a5112b3c002a51301f",
     "modified": true
   },
@@ -2523,6 +2523,118 @@
     "sha256": "91058825699831186076c454311876372348277642611cd0d1e23ac5f84c6056",
     "bytes": 47062,
     "original_sha256": "91058825699831186076c454311876372348277642611cd0d1e23ac5f84c6056",
+    "modified": false
+  },
+  {
+    "path": "configs/manuscript_figure_map_20261105.json",
+    "sha256": "6601cb51d97d15009a83a0b00dab1e4bcef8861e218edd38ac8525c3a2a1d482",
+    "bytes": 825,
+    "original_sha256": "0fb966f1301c058b892e38979808c930aa5967abdf1aee64d01617db6c40a03e",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/compute_diversity.py",
+    "sha256": "141f265046c22a0b5c3d5353edc3d1db642e6a7d1d73a5b433d31d1af23dd49d",
+    "bytes": 14752,
+    "original_sha256": "141f265046c22a0b5c3d5353edc3d1db642e6a7d1d73a5b433d31d1af23dd49d",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/diversity_audit.json",
+    "sha256": "9218df045652efd4d3a10268fc349e75ad4f746d63dd7bd3351a7e31d5dc4480",
+    "bytes": 9469,
+    "original_sha256": "0348b71c1a187181ed0c4ff3ad215a0270ef79043c91dea62eeeb8818e6235b6",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/diversity_curves.csv",
+    "sha256": "c627d2e81496f212e5ed722f15466a22d2f13ac519b4e951aa3f25884c4e986f",
+    "bytes": 90880,
+    "original_sha256": "c0cb80a4a5653f61fd74fd5f2c5cb3de1d5d7153ee584d2b955e3d3a5758b250",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/diversity_method.md",
+    "sha256": "abe70140e2de3d70ad15666a57608ee5967a26d6e79a4c2828e91ef1e923d248",
+    "bytes": 4900,
+    "original_sha256": "abe70140e2de3d70ad15666a57608ee5967a26d6e79a4c2828e91ef1e923d248",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/plot_synthetic_diversity.py",
+    "sha256": "408e0a4a302ef0f1f74fde02a38f837ac18565c0567701738eab43e2fb10bd34",
+    "bytes": 5787,
+    "original_sha256": "961942ee576f558e2e6f2ef6eeb1f30990a50981b0836a0d37e5c77d7fa8a30b",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/README.md",
+    "sha256": "7ce8bede319a479ff39e142ff93c61e4b86d4c723c244918091a3f0ded0ccab4",
+    "bytes": 3838,
+    "original_sha256": "7ce8bede319a479ff39e142ff93c61e4b86d4c723c244918091a3f0ded0ccab4",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/release_manifest.json",
+    "sha256": "5f28d60f5e644e9bad5e107c2769ae54abc8ec712a109d66badc027a826a548b",
+    "bytes": 2130,
+    "original_sha256": "c7a1a4685a1147497064ca1a36bb576ba299d34e81cf3f3570232a01cd14ffb1",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/inputs/ellipse_training.npy",
+    "sha256": "b7a2dc4eb01ab205102d6a9cfaf9c20e3082794c0c53079814955fadb93f737c",
+    "bytes": 384,
+    "original_sha256": "b7a2dc4eb01ab205102d6a9cfaf9c20e3082794c0c53079814955fadb93f737c",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/inputs/source_metadata.json",
+    "sha256": "c3194952e947800e0f3bebcbd9b36167f284100f965c23bb074154c23222fa6d",
+    "bytes": 1139,
+    "original_sha256": "bcb3f6054baf3d00919251d32b26a4ade1fe52a8a8d9669fa1e5656984611cf8",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/inputs/sphere_training.npy",
+    "sha256": "0d12e49956ff9267630779589b037ec6330efad4ea4845bf53961e973f62e699",
+    "bytes": 512,
+    "original_sha256": "0d12e49956ff9267630779589b037ec6330efad4ea4845bf53961e973f62e699",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/inputs/synthetic_geometry_template.pdf",
+    "sha256": "959f76e4979576c15340bfae3868fa98831e8c09bdd76ee2d87636310f42019b",
+    "bytes": 229341,
+    "original_sha256": "959f76e4979576c15340bfae3868fa98831e8c09bdd76ee2d87636310f42019b",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/output/figure_07_synthetic_geometries.pdf",
+    "sha256": "76f5509d87dc8d4a2e3696fbe1bcc157f7433d3a2d8fcc944a73b2b90da6a370",
+    "bytes": 256978,
+    "original_sha256": "18ddd1ef0dc0741cbc710b1489ae85c0451b54bbfbebf94df710745913e57c66",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/output/figure_07_synthetic_geometries.png",
+    "sha256": "d5255fa75bfae8934a3878e0611fbd12000a5eba601b1c1c46c897ad9627464a",
+    "bytes": 143754,
+    "original_sha256": "d5255fa75bfae8934a3878e0611fbd12000a5eba601b1c1c46c897ad9627464a",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/output/plot_audit.json",
+    "sha256": "9a49d19c153b845558fc4747c44151677ebc0f4a206402a40dc1cc9206e38c37",
+    "bytes": 497,
+    "original_sha256": "0f95a767db9d84efea67320a850cc8f7c382e3b2e057dad35ef8eb17ec02a173",
+    "modified": false
+  },
+  {
+    "path": "appendix_c_geometries/synthetic_diversity_20261105/output/synthetic_labels_curves.pdf",
+    "sha256": "f155e1e88bed72c481ce542154b5c7036e13b2a5578767627c8171a7f02dfd82",
+    "bytes": 24690,
+    "original_sha256": "0b840ed65d5676ed188c4abbd1850095cae3d8b188c42c78417e851658f8e9da",
     "modified": false
   }
 ]
