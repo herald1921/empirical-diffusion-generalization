@@ -1,0 +1,81 @@
+{
+  "rows": {
+    "ellipse": {
+      "beta_sha256": "9418cd53f2683b76f2ee40c6d202cf192bcd8c98dd1e5d1b4db2216c3ca5ffb3",
+      "topology_spans": [
+        [
+          0.10059241385981148,
+          0.24796666467610293
+        ],
+        [
+          0.24943431453067683,
+          0.257723205228903
+        ],
+        [
+          0.26508720631619787,
+          0.2720799111584744
+        ]
+      ],
+      "max_normalized_error": 11.151522693889891,
+      "error_curves": 5,
+      "diversity_curve": true
+    },
+    "sphere": {
+      "beta_sha256": "1aff0ae7f722e3ca9d59205d6bdfff1a071d882baa00cf3d071a5013c9153cbd",
+      "topology_spans": [
+        [
+          0.3021109143286822,
+          0.4784920642324463
+        ]
+      ],
+      "max_normalized_error": 3.1902564064643606,
+      "error_curves": 5,
+      "diversity_curve": true
+    },
+    "segment": {
+      "beta_sha256": "a66b64853fe8fa88dfa1b6710b71ff5304f79f43939c2d54334ff8bd3ff17fd6",
+      "topology_spans": [
+        [
+          0.028030628089236235,
+          2.0
+        ]
+      ],
+      "max_normalized_error": 37.82647412716372,
+      "error_curves": 5,
+      "diversity_curve": true
+    },
+    "eight": {
+      "beta_sha256": "21bcd8fc9a17ccc294f4fb180fe995102be25216eea93c99e7fed071858d5ea5",
+      "topology_spans": [
+        [
+          0.08215129642382597,
+          0.11917345742277857
+        ],
+        [
+          0.12195880225499324,
+          0.14250841377690998
+        ]
+      ],
+      "max_normalized_error": 11.449984179150254,
+      "error_curves": 5,
+      "diversity_curve": false
+    }
+  },
+  "colors": {
+    "raw": "#0072B2",
+    "tw": "#D55E00",
+    "tangent": "#009E73",
+    "normal": "#E69F00",
+    "diversity": "#CC79A7",
+    "ink": "#26343D",
+    "gray": "#7E8B94",
+    "grid": "#E7ECEF",
+    "shade": "#EDF5F2",
+    "betti": "#71869A"
+  },
+  "font": "STIXGeneral",
+  "font_pt": 9.2,
+  "outside_canvas_text": [],
+  "geometry_template_sha256": "959f76e4979576c15340bfae3868fa98831e8c09bdd76ee2d87636310f42019b",
+  "G_sha256": "c627d2e81496f212e5ed722f15466a22d2f13ac519b4e951aa3f25884c4e986f"
+}

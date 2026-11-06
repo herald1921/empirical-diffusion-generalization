@@ -1,0 +1,15 @@
+{
+  "release": "2026-11-06",
+  "figure": "figure_07_synthetic_geometries.pdf",
+  "source_directory": "appendix_c_geometries/synthetic_six_curves_20261106",
+  "historical_code": "retained",
+  "figure_sha256": "ce099862e5dc81391790def365bdbf35ab7182f515395219d78c392750fc5947",
+  "files": {
+    "compute_curves.py": "48d08805d187323d76ac652ba20055935c5e376f12f1acff9b1776268d451ab5",
+    "curves.json": "5c3110983dffc54fb74db36f7544db73617c2fc22577b56dda68ffba233a514c",
+    "numeric_audit.json": "144a5086587877f8babd0b46c24e35e92ec1b99f6de6e0d0788226135b55b0de",
+    "plot_audit.json": "40a6394907e778f2762518081ba6774a5224ff1cebb4282fa810b07fe0004d29",
+    "plot_six_curves.py": "2ec6c8649ab2b865b63778dff633e56dbb14673afeece0b80ca7a7972e81c31e",
+    "README.md": "72343d9c7c56d5dc37dd0c5ca4e1d518f8444e81d0fc4bcf9bbb0a658c738e86"
+  }
+}
