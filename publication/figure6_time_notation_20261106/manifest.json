@@ -1,0 +1,9 @@
+{
+  "input_sha256": "2b6ec4407113f637730095758a6e41fea3473254a8c9b80b3fdfa6ec09e4fe6f",
+  "output_sha256": "6f2b4fca94b1b9cdfea4045bc7de47168e497b17e5f1f17781ded8baa5c7560e",
+  "edits": 2,
+  "outside_label_changed_pixels": 0,
+  "font": "STIXGeneral",
+  "font_size": 9.2,
+  "data_and_geometry": "unchanged"
+}
