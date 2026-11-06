@@ -1,0 +1,70 @@
+[
+  {
+    "file": "figure_02_stopping_denoising_uniform.pdf",
+    "input_sha256": "411594937f649f0937e50c14dbcdf7c84bba2b31a9617ae9b662c097b18a2b8a",
+    "output_sha256": "45cc74f607ced9de5632546aeb88a7e79d2fb613833088ca369d593b32fb6d6d",
+    "edits": [
+      {
+        "from": "Tweedie",
+        "to": "Denoised",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Tweedie",
+        "to": "Denoised",
+        "font_size": 9.199999809265137
+      }
+    ],
+    "outside_label_changed_pixels": 0,
+    "page_size": [
+      0.0,
+      0.0,
+      432.0,
+      313.20001220703125
+    ]
+  },
+  {
+    "file": "figure_06_celeba_field_replacement.pdf",
+    "input_sha256": "c3604a6431769f3757e1618f07871f391dc3e45af5b8048d1563a41f3fa55491",
+    "output_sha256": "2b6ec4407113f637730095758a6e41fea3473254a8c9b80b3fdfa6ec09e4fe6f",
+    "edits": [
+      {
+        "from": "Pure neural",
+        "to": "Pure learned",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Empirical → neural",
+        "to": "Empirical → learned",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Empirical → neural",
+        "to": "Empirical → learned",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Neural → empirical",
+        "to": "Learned → empirical",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Empirical → neural",
+        "to": "Empirical → learned",
+        "font_size": 9.199999809265137
+      },
+      {
+        "from": "Neural → empirical",
+        "to": "Learned → empirical",
+        "font_size": 9.199999809265137
+      }
+    ],
+    "outside_label_changed_pixels": 0,
+    "page_size": [
+      0.0,
+      0.0,
+      432.0,
+      292.171875
+    ]
+  }
+]
